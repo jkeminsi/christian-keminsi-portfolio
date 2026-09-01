@@ -35,6 +35,12 @@ jobs:
 
       - name: Build Next.js static site
         run: npm run build
+        env:
+          GITHUB_ACTIONS: "true"
+          NEXT_PUBLIC_BASE_PATH: "/christian-keminsi-portfolio"
+
+      - name: Ensure .nojekyll exists
+        run: touch ./out/.nojekyll
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

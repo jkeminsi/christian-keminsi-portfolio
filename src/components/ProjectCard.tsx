@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { Project } from '@/types';
 import { useLanguage } from '@/context/LanguageContext';
+import { getAssetUrl } from '@/lib/utils';
 import {
   Sparkles,
   ArrowRight,
@@ -115,7 +116,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, index, onSele
         <div className="relative aspect-video w-full rounded-lg overflow-hidden bg-[#151515] border border-[#262626] flex flex-col justify-between p-3.5 sm:p-4 group-hover:border-[#3B82F6]/40 transition-colors">
           {project.screenshotUrl ? (
             <img
-              src={project.screenshotUrl}
+              src={getAssetUrl(project.screenshotUrl)}
               alt={project.screenshotAlt}
               loading="lazy"
               className="w-full h-full object-cover rounded"
