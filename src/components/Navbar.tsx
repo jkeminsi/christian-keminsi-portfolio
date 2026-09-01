@@ -138,23 +138,41 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenCommandPalette }) => {
             </kbd>
           </button>
 
-          {/* Availability Status */}
-          <div className="flex items-center gap-2 px-3 py-1 rounded-full bg-[#10B981]/10 border border-[#10B981]/30">
+          {/* Availability Status Link */}
+          <Link
+            href="/#contact"
+            className="flex items-center gap-2 px-3 py-1 rounded-full bg-[#10B981]/10 hover:bg-[#10B981]/20 border border-[#10B981]/30 hover:border-[#10B981]/60 transition-all cursor-pointer group"
+            title={language === 'fr' ? 'Aller au formulaire de contact' : 'Go to contact section'}
+          >
             <span className="w-2 h-2 rounded-full bg-[#10B981] status-dot-pulse" />
-            <span className="text-[11px] font-mono font-medium text-[#10B981]">
+            <span className="text-[11px] font-mono font-medium text-[#10B981] group-hover:underline">
               {personalInfo.ui.available}
             </span>
-          </div>
+          </Link>
 
-          <a
-            href={personalInfo.links.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="p-1.5 rounded-md bg-[#111111] border border-[#262626] text-[#CBD5E1] hover:text-[#F5F5F5] hover:border-[#3B82F6]/50 transition-all"
-            aria-label="GitHub Profile"
-          >
-            <Github className="w-4 h-4" />
-          </a>
+          {/* Social Links (GitHub & LinkedIn) */}
+          <div className="flex items-center gap-1.5">
+            <a
+              href={personalInfo.links.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-1.5 rounded-md bg-[#111111] border border-[#262626] text-[#CBD5E1] hover:text-[#F5F5F5] hover:border-[#3B82F6]/50 transition-all"
+              aria-label="GitHub Profile"
+              title="GitHub Profile"
+            >
+              <Github className="w-4 h-4" />
+            </a>
+            <a
+              href={personalInfo.links.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-1.5 rounded-md bg-[#111111] border border-[#262626] text-[#CBD5E1] hover:text-[#3B82F6] hover:border-[#3B82F6]/50 transition-all"
+              aria-label="LinkedIn Profile"
+              title="LinkedIn Profile"
+            >
+              <Linkedin className="w-4 h-4" />
+            </a>
+          </div>
         </div>
 
         {/* Mobile menu trigger & Lang toggle */}

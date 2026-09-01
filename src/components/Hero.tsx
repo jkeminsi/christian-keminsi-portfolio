@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 import { useLanguage } from '@/context/LanguageContext';
 import { getPortfolioData } from '@/data/portfolioData';
 import { ArrowRight, Github, Sparkles, CheckCircle2 } from 'lucide-react';
@@ -77,13 +78,13 @@ export const Hero: React.FC = () => {
 
             {/* Call to Actions - 1 CTA Principal */}
             <div className="flex flex-wrap items-center gap-4 pt-4">
-              <a
-                href="#projects"
+              <Link
+                href="/#projects"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-[#3B82F6] hover:bg-[#2563EB] text-white font-mono text-sm font-semibold shadow-[0_0_25px_rgba(59,130,246,0.35)] transition-all transform hover:-translate-y-0.5"
               >
                 <span>{personalInfo.ui.exploreWork}</span>
                 <ArrowRight className="w-4 h-4" />
-              </a>
+              </Link>
 
               <a
                 href={personalInfo.links.github}
