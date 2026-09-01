@@ -75,7 +75,7 @@ export const Hero: React.FC = () => {
               </div>
             </div>
 
-            {/* Call to Actions */}
+            {/* Call to Actions - 1 CTA Principal */}
             <div className="flex flex-wrap items-center gap-4 pt-4">
               <a
                 href="#projects"
@@ -89,26 +89,27 @@ export const Hero: React.FC = () => {
                 href={personalInfo.links.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-[#141414] hover:bg-[#1C1C1C] border border-[#262626] hover:border-[#3B82F6]/50 text-[#F5F5F5] font-mono text-sm font-medium transition-all transform hover:-translate-y-0.5"
+                className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-lg bg-[#141414] hover:bg-[#1C1C1C] border border-[#262626] hover:border-[#3B82F6]/50 text-[#CBD5E1] hover:text-[#F5F5F5] font-mono text-sm font-medium transition-all"
               >
-                <Github className="w-4 h-4 text-[#A3A3A3]" />
+                <Github className="w-4 h-4 text-[#94A3B8]" />
                 <span>{personalInfo.ui.viewGithub}</span>
               </a>
             </div>
 
-            {/* Quick Metrics Bar */}
+            {/* [DÉSACTIVÉ EN ATTENTE DE VALIDATION] - Quick Metrics Bar
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-6 border-t border-[#1F1F1F]">
               {personalInfo.stats.map((stat, idx) => (
                 <div key={idx} className="space-y-0.5">
                   <div className="text-xl sm:text-2xl font-bold font-mono text-[#F5F5F5] tracking-tight">
                     {stat.value}
                   </div>
-                  <div className="text-xs text-[#737373] font-mono uppercase tracking-wider">
+                  <div className="text-xs text-[#A3A3A3] font-mono uppercase tracking-wider">
                     {stat.label}
                   </div>
                 </div>
               ))}
             </div>
+            */}
 
           </div>
 

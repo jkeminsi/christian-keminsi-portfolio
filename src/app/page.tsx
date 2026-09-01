@@ -4,12 +4,8 @@ import React, { useState, useEffect } from 'react';
 import { LanguageProvider } from '@/context/LanguageContext';
 import { Navbar } from '@/components/Navbar';
 import { Hero } from '@/components/Hero';
-import { About } from '@/components/About';
-import { Expertise } from '@/components/Expertise';
 import { FeaturedProjects } from '@/components/FeaturedProjects';
-import { HowIBuild } from '@/components/HowIBuild';
-import { EngineeringLab } from '@/components/EngineeringLab';
-import { TechStack } from '@/components/TechStack';
+import { Expertise } from '@/components/Expertise';
 import { Contact } from '@/components/Contact';
 import { Footer } from '@/components/Footer';
 import { CommandPalette } from '@/components/CommandPalette';
@@ -31,28 +27,16 @@ function PortfolioApp() {
       {/* Top Navbar with Language Switcher */}
       <Navbar onOpenCommandPalette={() => setCommandPaletteOpen(true)} />
 
-      {/* 1. Hero Section */}
+      {/* 1. Hero Section (Positionnement unique & 1 CTA) */}
       <Hero />
 
-      {/* 2. About & Profile */}
-      <About />
-
-      {/* 3. Engineering Capabilities & Expertise */}
-      <Expertise />
-
-      {/* 4. Featured Case Studies & Projects */}
+      {/* 2. 4 Projets Phares */}
       <FeaturedProjects />
 
-      {/* 5. How I Build (Pipeline) */}
-      <HowIBuild />
+      {/* 3. Capacités d'Ingénierie (3 cards consolidées) */}
+      <Expertise />
 
-      {/* 6. Architecture & Engineering Lab */}
-      <EngineeringLab />
-
-      {/* 7. Curated Tech Stack */}
-      <TechStack />
-
-      {/* 8. Contact & Transmission */}
+      {/* 4. Contact & Transmission (1 CTA) */}
       <Contact />
 
       {/* Footer */}

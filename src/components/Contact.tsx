@@ -55,14 +55,14 @@ export const Contact: React.FC = () => {
 
             {/* Quick Email Copy Card */}
             <div className="p-4 rounded-xl bg-[#111111] border border-[#262626] space-y-2">
-              <div className="text-xs font-mono text-[#737373]">{personalInfo.ui.contact.directEmail}</div>
+              <div className="text-xs font-mono text-[#CBD5E1]">{personalInfo.ui.contact.directEmail}</div>
               <div className="flex items-center justify-between gap-3">
                 <span className="font-mono text-sm sm:text-base text-[#F5F5F5] truncate">
                   {personalInfo.links.email}
                 </span>
                 <button
                   onClick={copyEmail}
-                  className="px-3 py-1.5 rounded-lg bg-[#171717] hover:bg-[#222222] border border-[#2E2E2E] text-xs font-mono text-[#D4D4D4] hover:text-[#F5F5F5] inline-flex items-center gap-1.5 transition-colors shrink-0"
+                  className="px-3 py-1.5 rounded-lg bg-[#171717] hover:bg-[#222222] border border-[#2E2E2E] text-xs font-mono text-[#CBD5E1] hover:text-[#F5F5F5] inline-flex items-center gap-1.5 transition-colors shrink-0"
                 >
                   {copied ? (
                     <>
@@ -71,7 +71,7 @@ export const Contact: React.FC = () => {
                     </>
                   ) : (
                     <>
-                      <Copy className="w-3.5 h-3.5 text-[#737373]" />
+                      <Copy className="w-3.5 h-3.5 text-[#94A3B8]" />
                       <span>{personalInfo.ui.contact.copy}</span>
                     </>
                   )}
@@ -87,9 +87,9 @@ export const Contact: React.FC = () => {
                 rel="noopener noreferrer"
                 className="px-4 py-2.5 rounded-lg bg-[#141414] hover:bg-[#1C1C1C] border border-[#262626] text-xs font-mono text-[#F5F5F5] inline-flex items-center gap-2 transition-colors"
               >
-                <Github className="w-4 h-4 text-[#A3A3A3]" />
+                <Github className="w-4 h-4 text-[#CBD5E1]" />
                 <span>{personalInfo.ui.contact.githubProfile}</span>
-                <ArrowUpRight className="w-3.5 h-3.5 text-[#737373]" />
+                <ArrowUpRight className="w-3.5 h-3.5 text-[#94A3B8]" />
               </a>
 
               <a
@@ -100,7 +100,7 @@ export const Contact: React.FC = () => {
               >
                 <Linkedin className="w-4 h-4 text-[#3B82F6]" />
                 <span>{personalInfo.ui.contact.linkedinProfile}</span>
-                <ArrowUpRight className="w-3.5 h-3.5 text-[#737373]" />
+                <ArrowUpRight className="w-3.5 h-3.5 text-[#94A3B8]" />
               </a>
             </div>
 
@@ -112,45 +112,45 @@ export const Contact: React.FC = () => {
               <h3 className="font-mono text-base font-bold text-[#F5F5F5]">
                 {personalInfo.ui.contact.formTitle}
               </h3>
-              <p className="text-xs text-[#737373]">
+              <p className="text-xs text-[#CBD5E1]">
                 {personalInfo.ui.contact.formSubtitle}
               </p>
             </div>
 
             <form onSubmit={handleSubmit} className="space-y-4 font-mono text-xs">
               <div className="space-y-1.5">
-                <label className="text-[#A3A3A3]">{personalInfo.ui.contact.nameLabel}</label>
+                <label className="text-[#CBD5E1]">{personalInfo.ui.contact.nameLabel}</label>
                 <input
                   type="text"
                   required
                   placeholder={personalInfo.ui.contact.namePlaceholder}
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  className="w-full px-3.5 py-2.5 rounded-lg bg-[#171717] border border-[#262626] text-[#F5F5F5] placeholder-[#555555] focus:outline-none focus:border-[#3B82F6] transition-colors"
+                  className="w-full px-3.5 py-2.5 rounded-lg bg-[#171717] border border-[#262626] text-[#F5F5F5] placeholder-[#94A3B8] focus:outline-none focus:border-[#3B82F6] transition-colors"
                 />
               </div>
 
               <div className="space-y-1.5">
-                <label className="text-[#A3A3A3]">{personalInfo.ui.contact.emailLabel}</label>
+                <label className="text-[#CBD5E1]">{personalInfo.ui.contact.emailLabel}</label>
                 <input
                   type="email"
                   required
                   placeholder={personalInfo.ui.contact.emailPlaceholder}
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  className="w-full px-3.5 py-2.5 rounded-lg bg-[#171717] border border-[#262626] text-[#F5F5F5] placeholder-[#555555] focus:outline-none focus:border-[#3B82F6] transition-colors"
+                  className="w-full px-3.5 py-2.5 rounded-lg bg-[#171717] border border-[#262626] text-[#F5F5F5] placeholder-[#94A3B8] focus:outline-none focus:border-[#3B82F6] transition-colors"
                 />
               </div>
 
               <div className="space-y-1.5">
-                <label className="text-[#A3A3A3]">{personalInfo.ui.contact.msgLabel}</label>
+                <label className="text-[#CBD5E1]">{personalInfo.ui.contact.msgLabel}</label>
                 <textarea
                   rows={4}
                   required
                   placeholder={personalInfo.ui.contact.msgPlaceholder}
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  className="w-full px-3.5 py-2.5 rounded-lg bg-[#171717] border border-[#262626] text-[#F5F5F5] placeholder-[#555555] focus:outline-none focus:border-[#3B82F6] transition-colors resize-none"
+                  className="w-full px-3.5 py-2.5 rounded-lg bg-[#171717] border border-[#262626] text-[#F5F5F5] placeholder-[#94A3B8] focus:outline-none focus:border-[#3B82F6] transition-colors resize-none"
                 />
               </div>
 

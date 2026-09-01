@@ -35,7 +35,7 @@ export const Expertise: React.FC = () => {
                 : "Organized by engineering capacity, not just logos."}
             </h2>
           </div>
-          <p className="text-sm font-mono text-[#737373] max-w-md">
+          <p className="text-sm font-mono text-[#CBD5E1] max-w-md">
             {language === 'fr'
               ? "Couverture technique complète : architecture système, scalabilité backend, interfaces modernes et modèles de Machine Learning."
               : "Full-spectrum software engineering covering architecture, backend scalability, modern interfaces, and machine learning models."}
@@ -56,7 +56,7 @@ export const Expertise: React.FC = () => {
                     <div className="w-10 h-10 rounded-lg bg-[#171717] border border-[#262626] flex items-center justify-center group-hover:border-[#3B82F6]/40 transition-colors">
                       {iconMap[cap.icon] || <Cpu className="w-5 h-5 text-[#3B82F6]" />}
                     </div>
-                    <span className="font-mono text-xs font-bold text-[#737373] group-hover:text-[#3B82F6] transition-colors">
+                    <span className="font-mono text-xs font-bold text-[#A3A3A3] group-hover:text-[#3B82F6] transition-colors">
                       {cap.number}
                     </span>
                   </div>
@@ -65,12 +65,12 @@ export const Expertise: React.FC = () => {
                     <h3 className="text-lg font-bold text-[#F5F5F5] group-hover:text-[#3B82F6] transition-colors">
                       {cap.title}
                     </h3>
-                    <p className="text-xs font-mono text-[#A3A3A3] mt-1">
+                    <p className="text-xs font-mono text-[#94A3B8] mt-1">
                       {cap.tagline}
                     </p>
                   </div>
 
-                  <p className="text-xs text-[#737373] leading-relaxed">
+                  <p className="text-xs text-[#CBD5E1] leading-relaxed">
                     {cap.description}
                   </p>
                 </div>
@@ -81,16 +81,16 @@ export const Expertise: React.FC = () => {
                     {cap.technologies.map((tech) => (
                       <span
                         key={tech}
-                        className="px-2 py-0.5 text-[11px] font-mono bg-[#171717] text-[#D4D4D4] border border-[#262626] rounded group-hover:border-[#333333]"
+                        className="px-2 py-0.5 text-[11px] font-mono bg-[#171717] text-[#CBD5E1] border border-[#2E2E2E] rounded group-hover:border-[#3E3E3E]"
                       >
                         {tech}
                       </span>
                     ))}
                   </div>
 
-                  <div className="flex items-center justify-between text-[11px] font-mono text-[#737373] pt-1">
+                  <div className="flex items-center justify-between text-[11px] font-mono text-[#94A3B8] pt-1">
                     <span>{language === 'fr' ? 'Livrables clés :' : 'Key deliverables:'}</span>
-                    <span className="text-[#A3A3A3]">{cap.keyOutputs.join(' • ')}</span>
+                    <span className="text-[#F5F5F5]">{cap.keyOutputs.join(' • ')}</span>
                   </div>
                 </div>
               </div>

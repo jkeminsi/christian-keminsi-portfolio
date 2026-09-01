@@ -25,13 +25,13 @@ export const Footer: React.FC = () => {
             <div className="font-mono text-sm font-bold text-[#F5F5F5]">
               {personalInfo.name}
             </div>
-            <div className="text-xs font-mono text-[#737373]">
+            <div className="text-xs font-mono text-[#CBD5E1]">
               {personalInfo.title} · {personalInfo.focus}
             </div>
           </div>
 
           {/* Social Links */}
-          <div className="flex items-center gap-4 text-xs font-mono text-[#A3A3A3]">
+          <div className="flex items-center gap-4 text-xs font-mono text-[#CBD5E1]">
             <a
               href={personalInfo.links.github}
               target="_blank"
@@ -40,7 +40,7 @@ export const Footer: React.FC = () => {
             >
               GitHub
             </a>
-            <span className="text-[#333333]">/</span>
+            <span className="text-[#3E3E3E]">/</span>
             <a
               href={personalInfo.links.linkedin}
               target="_blank"
@@ -49,7 +49,7 @@ export const Footer: React.FC = () => {
             >
               LinkedIn
             </a>
-            <span className="text-[#333333]">/</span>
+            <span className="text-[#3E3E3E]">/</span>
             <a
               href={`mailto:${personalInfo.links.email}`}
               className="hover:text-[#3B82F6] transition-colors"
@@ -61,7 +61,7 @@ export const Footer: React.FC = () => {
           {/* Back to top */}
           <button
             onClick={scrollToTop}
-            className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#141414] hover:bg-[#1C1C1C] border border-[#262626] text-xs font-mono text-[#A3A3A3] hover:text-[#F5F5F5] transition-colors"
+            className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#141414] hover:bg-[#1C1C1C] border border-[#262626] text-xs font-mono text-[#CBD5E1] hover:text-[#F5F5F5] transition-colors"
           >
             <span>{personalInfo.ui.footer.backToTop}</span>
             <ArrowUp className="w-3.5 h-3.5" />
@@ -69,7 +69,7 @@ export const Footer: React.FC = () => {
         </div>
 
         {/* Bottom copyright & status */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-[#737373]">
+        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-[#A3A3A3]">
           <div>
             © {new Date().getFullYear()} Christian Jordan Keminsi. {personalInfo.ui.footer.rights}
           </div>

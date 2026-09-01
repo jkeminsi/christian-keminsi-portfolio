@@ -59,63 +59,41 @@ export const CommandPalette: React.FC<CommandPaletteProps> = ({
       },
     })),
     {
-      id: 'sec-about',
-      type: language === 'fr' ? 'Section' : 'Section',
-      title: language === 'fr' ? 'À Propos / Profil' : 'About / Profile',
-      subtitle: language === 'fr' ? 'Découvrir ma philosophie produit et mes domaines d\'intervention' : 'Read about my product engineering philosophy & domains',
+      id: 'sec-projects',
+      type: 'Section',
+      title: language === 'fr' ? 'Projets Phares (Accueil)' : 'Featured Projects (Home)',
+      subtitle: language === 'fr' ? 'Voir la sélection des 4 projets phares' : 'View the 4 selected flagship projects',
       action: () => {
         onClose();
-        document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
+        if (window.location.pathname !== '/') {
+          window.location.href = '/#projects';
+        } else {
+          document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
+        }
       },
     },
     {
-      id: 'sec-projects',
-      type: 'Section',
-      title: language === 'fr' ? 'Études de Cas Phares' : 'Featured Case Studies',
-      subtitle: language === 'fr' ? 'Explorer 6 architectures et produits en production' : 'Explore 6 production architectures and platforms',
+      id: 'sec-all-projects',
+      type: language === 'fr' ? 'Page' : 'Page',
+      title: language === 'fr' ? 'Tous les Projets (Catalogue complet)' : 'All Projects (Full Catalog)',
+      subtitle: language === 'fr' ? 'Consulter les 9 projets et études de cas' : 'Explore all 9 projects and case studies',
       action: () => {
         onClose();
-        document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
+        window.location.href = '/projets';
       },
     },
     {
       id: 'sec-expertise',
       type: 'Section',
       title: language === 'fr' ? 'Capacités d\'Ingénierie' : 'Engineering Capabilities',
-      subtitle: language === 'fr' ? 'Frontend, Backend, IA, Données, Architecture Offline-First' : 'Frontend, Backend, AI, Data, Offline-First Architecture',
+      subtitle: language === 'fr' ? 'Product Engineering, Full-Stack Engineering, IA & Architecture' : 'Product Engineering, Full-Stack Engineering, AI & Architecture',
       action: () => {
         onClose();
-        document.getElementById('expertise')?.scrollIntoView({ behavior: 'smooth' });
-      },
-    },
-    {
-      id: 'sec-pipeline',
-      type: 'Section',
-      title: language === 'fr' ? 'Pipeline de Création' : 'How I Build (Pipeline)',
-      subtitle: language === 'fr' ? 'Cycle en 5 étapes : Comprendre → Déployer' : '5-step product lifecycle: Understand to Ship',
-      action: () => {
-        onClose();
-        document.getElementById('how-i-build')?.scrollIntoView({ behavior: 'smooth' });
-      },
-    },
-    {
-      id: 'sec-lab',
-      type: 'Section',
-      title: language === 'fr' ? 'Laboratoire d\'Architecture' : 'Architecture Lab',
-      subtitle: language === 'fr' ? 'Blueprints interactifs offline-first, IA & microservices' : 'Interactive blueprints for offline-first, ML & microservices',
-      action: () => {
-        onClose();
-        document.getElementById('engineering-lab')?.scrollIntoView({ behavior: 'smooth' });
-      },
-    },
-    {
-      id: 'sec-stack',
-      type: 'Section',
-      title: language === 'fr' ? 'Stack Technique' : 'Curated Tech Stack',
-      subtitle: language === 'fr' ? 'Technologies et outillage de production' : 'Core technologies and engineering tooling',
-      action: () => {
-        onClose();
-        document.getElementById('tech-stack')?.scrollIntoView({ behavior: 'smooth' });
+        if (window.location.pathname !== '/') {
+          window.location.href = '/#expertise';
+        } else {
+          document.getElementById('expertise')?.scrollIntoView({ behavior: 'smooth' });
+        }
       },
     },
     {
@@ -125,7 +103,11 @@ export const CommandPalette: React.FC<CommandPaletteProps> = ({
       subtitle: language === 'fr' ? 'Envoyer un message direct ou copier l\'e-mail' : 'Send an inquiry or copy direct email',
       action: () => {
         onClose();
-        document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+        if (window.location.pathname !== '/') {
+          window.location.href = '/#contact';
+        } else {
+          document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+        }
       },
     },
     {
@@ -162,7 +144,7 @@ export const CommandPalette: React.FC<CommandPaletteProps> = ({
         
         {/* Search input bar */}
         <div className="flex items-center px-4 py-3.5 border-b border-[#222222] gap-3">
-          <Search className="w-4 h-4 text-[#737373]" />
+          <Search className="w-4 h-4 text-[#94A3B8]" />
           <input
             type="text"
             autoFocus
@@ -184,9 +166,9 @@ export const CommandPalette: React.FC<CommandPaletteProps> = ({
                 handleSelect(selectedIndex);
               }
             }}
-            className="w-full bg-transparent text-sm font-mono text-[#F5F5F5] placeholder-[#666666] focus:outline-none"
+            className="w-full bg-transparent text-sm font-mono text-[#F5F5F5] placeholder-[#94A3B8] focus:outline-none"
           />
-          <kbd className="text-[10px] bg-[#171717] text-[#737373] px-2 py-0.5 rounded border border-[#2E2E2E]">
+          <kbd className="text-[10px] bg-[#171717] text-[#CBD5E1] px-2 py-0.5 rounded border border-[#2E2E2E]">
             ESC
           </kbd>
         </div>
@@ -194,7 +176,7 @@ export const CommandPalette: React.FC<CommandPaletteProps> = ({
         {/* Results List */}
         <div className="max-h-80 overflow-y-auto p-2 space-y-1">
           {filteredItems.length === 0 ? (
-            <div className="p-8 text-center text-xs font-mono text-[#737373]">
+            <div className="p-8 text-center text-xs font-mono text-[#CBD5E1]">
               {language === 'fr' ? `Aucun résultat trouvé pour "${query}".` : `No matches found for "${query}".`}
             </div>
           ) : (
@@ -216,7 +198,7 @@ export const CommandPalette: React.FC<CommandPaletteProps> = ({
                           ? 'bg-[#3B82F6]/10 text-[#60A5FA] border-[#3B82F6]/30'
                           : item.type === 'Section'
                           ? 'bg-[#10B981]/10 text-[#10B981] border-[#10B981]/30'
-                          : 'bg-[#1C1C1C] text-[#737373] border-[#2A2A2A]'
+                          : 'bg-[#1C1C1C] text-[#CBD5E1] border-[#2A2A2A]'
                       }`}
                     >
                       {item.type}
@@ -226,7 +208,7 @@ export const CommandPalette: React.FC<CommandPaletteProps> = ({
                       <div className="font-mono text-xs font-bold text-[#F5F5F5] truncate">
                         {item.title}
                       </div>
-                      <div className="text-[11px] text-[#737373] truncate">
+                      <div className="text-[11px] text-[#CBD5E1] truncate">
                         {item.subtitle}
                       </div>
                     </div>
@@ -242,7 +224,7 @@ export const CommandPalette: React.FC<CommandPaletteProps> = ({
         </div>
 
         {/* Command palette footer */}
-        <div className="px-4 py-2 bg-[#0E0E0E] border-t border-[#222222] flex items-center justify-between text-[11px] font-mono text-[#737373]">
+        <div className="px-4 py-2 bg-[#0E0E0E] border-t border-[#222222] flex items-center justify-between text-[11px] font-mono text-[#CBD5E1]">
           <div className="flex items-center gap-3">
             <span>{language === 'fr' ? '↑↓ Naviguer' : '↑↓ Navigate'}</span>
             <span>{language === 'fr' ? '↵ Sélectionner' : '↵ Select'}</span>

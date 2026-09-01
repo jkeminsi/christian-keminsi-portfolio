@@ -21,6 +21,11 @@ export interface Project {
   projectTier: ProjectTier;
   category: 'ai-ml' | 'enterprise-architecture' | 'fintech' | 'healthtech' | 'edtech' | 'sportstech' | 'business';
   categoryLabel: string;
+  keyTech: string;
+  screenshotUrl?: string;
+  screenshotAlt: string;
+  screenshotPlaceholder: string;
+  metricLine: string;
   isSignature?: boolean;
   isLiveProduction?: boolean;
   liveUrl?: string;

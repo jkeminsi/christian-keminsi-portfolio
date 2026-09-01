@@ -91,7 +91,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
           {localizedProject.role && (
             <div className="flex items-center justify-between p-3.5 rounded-xl bg-[#171717] border border-[#262626]">
               <div className="flex items-center gap-2 font-mono text-xs">
-                <span className="text-[#737373]">{language === 'fr' ? 'Rôle confirmé sur ce projet :' : 'Confirmed Role:'}</span>
+                <span className="text-[#CBD5E1]">{language === 'fr' ? 'Rôle confirmé sur ce projet :' : 'Confirmed Role:'}</span>
                 <span className="text-[#3B82F6] font-bold">{localizedProject.role}</span>
               </div>
               {localizedProject.liveUrl && (
@@ -113,7 +113,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 p-4 rounded-xl bg-[#171717] border border-[#262626]">
               {localizedProject.metrics.map((m, idx) => (
                 <div key={idx} className="space-y-1">
-                  <div className="text-[11px] font-mono text-[#737373] uppercase">{m.label}</div>
+                  <div className="text-[11px] font-mono text-[#CBD5E1] uppercase">{m.label}</div>
                   <div className="text-base sm:text-lg font-mono font-bold text-[#3B82F6]">{m.value}</div>
                 </div>
               ))}
@@ -125,7 +125,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
             <h3 className="text-xs font-mono uppercase text-[#3B82F6] font-semibold tracking-wider">
               {language === 'fr' ? '// 01. Problématique & Contexte Produit' : '// 01. Problem & Product Context'}
             </h3>
-            <p className="text-[#A3A3A3] text-base leading-relaxed">
+            <p className="text-[#CBD5E1] text-base leading-relaxed">
               {localizedProject.problem}
             </p>
           </div>
@@ -150,12 +150,12 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
                     {localizedProject.systemSchema.title}
                   </span>
                 </div>
-                <span className="text-[11px] font-mono text-[#737373] hidden sm:inline">
+                <span className="text-[11px] font-mono text-[#CBD5E1] hidden sm:inline">
                   {language === 'fr' ? 'Topologie Interactive des Nœuds' : 'Interactive Node Map'}
                 </span>
               </div>
-              <div className="text-xs font-mono text-[#737373] pb-2">
-                {language === 'fr' ? 'Flux :' : 'Flow:'} <span className="text-[#A3A3A3]">{localizedProject.systemSchema.flow}</span>
+              <div className="text-xs font-mono text-[#CBD5E1] pb-2">
+                {language === 'fr' ? 'Flux :' : 'Flow:'} <span className="text-[#F5F5F5]">{localizedProject.systemSchema.flow}</span>
               </div>
 
               {/* Visual Nodes */}
@@ -171,7 +171,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
                     <div className="text-xs font-bold font-mono text-[#F5F5F5] truncate">
                       {node.label}
                     </div>
-                    <div className="text-[10px] text-[#737373] truncate">
+                    <div className="text-[10px] text-[#CBD5E1] truncate">
                       {node.sub}
                     </div>
                   </div>
@@ -204,7 +204,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
               {localizedProject.keyFeatures.map((feature, idx) => (
                 <div key={idx} className="flex items-start gap-2 p-2.5 rounded bg-[#141414] border border-[#1F1F1F]">
                   <CheckCircle2 className="w-4 h-4 text-[#10B981] shrink-0 mt-0.5" />
-                  <span className="text-xs text-[#A3A3A3] leading-tight">{feature}</span>
+                  <span className="text-xs text-[#CBD5E1] leading-tight">{feature}</span>
                 </div>
               ))}
             </div>
@@ -231,7 +231,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
 
         {/* Modal Footer */}
         <div className="sticky bottom-0 bg-[#141414]/95 backdrop-blur-md border-t border-[#222222] p-6 flex items-center justify-between z-20">
-          <div className="text-xs font-mono text-[#737373]">
+          <div className="text-xs font-mono text-[#CBD5E1]">
             {language === 'fr' ? 'Statut :' : 'Status:'}{' '}
             <span className="text-[#10B981]">
               {localizedProject.projectTier === 'production' ? (language === 'fr' ? 'Déployé en Production' : 'Production Live') : 'Production Ready'}

@@ -22,7 +22,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenCommandPalette }) => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
 
-      const sections = ['about', 'projects', 'expertise', 'how-i-build', 'engineering-lab', 'tech-stack', 'contact'];
+      const sections = ['projects', 'expertise', 'contact'];
       const scrollPos = window.scrollY + 200;
 
       for (const section of sections) {
@@ -43,13 +43,10 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenCommandPalette }) => {
   }, []);
 
   const navLinks = [
-    { name: personalInfo.ui.nav.about, href: '#about', id: 'about' },
-    { name: personalInfo.ui.nav.work, href: '#projects', id: 'projects' },
-    { name: personalInfo.ui.nav.expertise, href: '#expertise', id: 'expertise' },
-    { name: personalInfo.ui.nav.pipeline, href: '#how-i-build', id: 'how-i-build' },
-    { name: personalInfo.ui.nav.architecture, href: '#engineering-lab', id: 'engineering-lab' },
-    { name: personalInfo.ui.nav.stack, href: '#tech-stack', id: 'tech-stack' },
-    { name: personalInfo.ui.nav.contact, href: '#contact', id: 'contact' },
+    { name: personalInfo.ui.nav.work, href: '/#projects', id: 'projects' },
+    { name: personalInfo.ui.nav.expertise, href: '/#expertise', id: 'expertise' },
+    { name: personalInfo.ui.nav.contact, href: '/#contact', id: 'contact' },
+    { name: language === 'fr' ? 'Tous les Projets (9)' : 'All Projects (9)', href: '/projets', id: 'all-projects' },
   ];
 
   return (
@@ -108,7 +105,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenCommandPalette }) => {
               className={`px-2.5 py-1 rounded-md transition-all font-semibold ${
                 language === 'fr'
                   ? 'bg-[#1F1F1F] text-[#3B82F6] border border-[#3B82F6]/40 shadow-sm'
-                  : 'text-[#737373] hover:text-[#F5F5F5]'
+                  : 'text-[#CBD5E1] hover:text-[#F5F5F5]'
               }`}
               title="Passer en Français (par défaut)"
             >
@@ -119,7 +116,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenCommandPalette }) => {
               className={`px-2.5 py-1 rounded-md transition-all font-semibold ${
                 language === 'en'
                   ? 'bg-[#1F1F1F] text-[#3B82F6] border border-[#3B82F6]/40 shadow-sm'
-                  : 'text-[#737373] hover:text-[#F5F5F5]'
+                  : 'text-[#CBD5E1] hover:text-[#F5F5F5]'
               }`}
               title="Switch to English"
             >
@@ -130,12 +127,12 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenCommandPalette }) => {
           {/* Quick Search / Cmd+K */}
           <button
             onClick={onOpenCommandPalette}
-            className="flex items-center gap-2 px-2.5 py-1 text-xs font-mono text-[#A3A3A3] bg-[#111111] hover:bg-[#171717] border border-[#262626] rounded-md transition-colors group"
+            className="flex items-center gap-2 px-2.5 py-1 text-xs font-mono text-[#CBD5E1] bg-[#111111] hover:bg-[#171717] border border-[#262626] rounded-md transition-colors group"
             title="Open Command Palette (Ctrl+K / Cmd+K)"
           >
-            <Search className="w-3.5 h-3.5 text-[#737373] group-hover:text-[#3B82F6]" />
+            <Search className="w-3.5 h-3.5 text-[#94A3B8] group-hover:text-[#3B82F6]" />
             <span className="hidden xl:inline text-[11px]">{personalInfo.ui.quickSearch}</span>
-            <kbd className="text-[10px] bg-[#1F1F1F] text-[#737373] px-1.5 py-0.5 rounded border border-[#2E2E2E]">
+            <kbd className="text-[10px] bg-[#1F1F1F] text-[#CBD5E1] px-1.5 py-0.5 rounded border border-[#2E2E2E]">
               ⌘K
             </kbd>
           </button>
@@ -152,7 +149,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenCommandPalette }) => {
             href={personalInfo.links.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="p-1.5 rounded-md bg-[#111111] border border-[#262626] text-[#A3A3A3] hover:text-[#F5F5F5] hover:border-[#3B82F6]/50 transition-all"
+            className="p-1.5 rounded-md bg-[#111111] border border-[#262626] text-[#CBD5E1] hover:text-[#F5F5F5] hover:border-[#3B82F6]/50 transition-all"
             aria-label="GitHub Profile"
           >
             <Github className="w-4 h-4" />
@@ -165,7 +162,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenCommandPalette }) => {
             <button
               onClick={() => setLanguage('fr')}
               className={`px-2 py-0.5 rounded text-[11px] ${
-                language === 'fr' ? 'bg-[#1F1F1F] text-[#3B82F6] font-bold' : 'text-[#737373]'
+                language === 'fr' ? 'bg-[#1F1F1F] text-[#3B82F6] font-bold' : 'text-[#CBD5E1]'
               }`}
             >
               FR
@@ -173,7 +170,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenCommandPalette }) => {
             <button
               onClick={() => setLanguage('en')}
               className={`px-2 py-0.5 rounded text-[11px] ${
-                language === 'en' ? 'bg-[#1F1F1F] text-[#3B82F6] font-bold' : 'text-[#737373]'
+                language === 'en' ? 'bg-[#1F1F1F] text-[#3B82F6] font-bold' : 'text-[#CBD5E1]'
               }`}
             >
               EN
