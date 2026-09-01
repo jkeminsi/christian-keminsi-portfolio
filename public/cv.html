@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CV — Christian Jordan KEMINSI | Full-Stack & Systems Architect</title>
+  <title>CV — Christian Jordan KEMINSI | Full-Stack Engineer & Systems Architect</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -26,8 +26,6 @@
       --text-light: #64748B;
       --border: #E2E8F0;
       --bg-card: #F8FAFC;
-      --badge-bg: #F1F5F9;
-      --tag-border: #CBD5E1;
       --emerald: #059669;
       --emerald-bg: #ECFDF5;
       --indigo: #4F46E5;
@@ -36,10 +34,10 @@
 
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background-color: #525659;
+      background-color: #475569;
       color: var(--text-main);
-      line-height: 1.42;
-      font-size: 9.6pt;
+      line-height: 1.4;
+      font-size: 9.4pt;
       -webkit-font-smoothing: antialiased;
       padding: 20px 0;
     }
@@ -55,11 +53,11 @@
       margin: 0 auto 20px auto;
       background: #FFFFFF;
       box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-      padding: 13mm 15mm;
+      padding: 12mm 14mm;
       position: relative;
     }
 
-    /* ──────────────── PRINT BUTTON BAR (HIDDEN IN PRINT) ──────────────── */
+    /* ──────────────── ACTION BAR (HIDDEN IN PRINT) ──────────────── */
     .action-bar {
       width: 210mm;
       margin: 0 auto 15px auto;
@@ -126,15 +124,15 @@
       background: #475569;
     }
 
-    /* ──────────────── HEADER ──────────────── */
+    /* ──────────────── 1. HEADER (COMPACT & EXPLICIT) ──────────────── */
     .header {
       display: flex;
-      align-items: flex-start;
+      align-items: center;
       justify-content: space-between;
-      gap: 16px;
+      gap: 14px;
       border-bottom: 2px solid var(--primary);
-      padding-bottom: 11px;
-      margin-bottom: 10px;
+      padding-bottom: 9px;
+      margin-bottom: 9px;
     }
 
     .header-left {
@@ -142,7 +140,7 @@
     }
 
     .candidate-name {
-      font-size: 18.5pt;
+      font-size: 17.5pt;
       font-weight: 800;
       color: var(--primary);
       letter-spacing: -0.02em;
@@ -151,26 +149,33 @@
     }
 
     .candidate-title {
-      font-size: 11.5pt;
+      font-size: 11pt;
       font-weight: 700;
       color: var(--accent);
-      margin-top: 3px;
+      margin-top: 2px;
       letter-spacing: -0.01em;
     }
 
-    .candidate-subtitle {
-      font-size: 8.5pt;
-      color: var(--text-muted);
+    .status-line {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #F1F5F9;
+      color: var(--primary);
+      font-size: 8.1pt;
       font-weight: 600;
-      margin-top: 1px;
+      padding: 2px 7px;
+      border-radius: 4px;
+      margin-top: 3px;
+      border-left: 3px solid var(--accent);
     }
 
     .contact-grid {
       display: flex;
       flex-wrap: wrap;
-      gap: 5px 14px;
-      margin-top: 7px;
-      font-size: 8pt;
+      gap: 4px 12px;
+      margin-top: 5px;
+      font-size: 7.8pt;
       color: var(--text-muted);
       font-family: 'JetBrains Mono', monospace;
     }
@@ -195,99 +200,103 @@
     }
 
     .header-photo {
-      width: 72px;
-      height: 72px;
-      border-radius: 12px;
+      width: 65px;
+      height: 65px;
+      border-radius: 10px;
       object-fit: cover;
       object-position: top;
-      border: 2px solid var(--border);
+      border: 1.5px solid var(--border);
       flex-shrink: 0;
     }
 
     /* ──────────────── SECTION HEADINGS ──────────────── */
     .section-title {
-      font-size: 10.2pt;
+      font-size: 9.8pt;
       font-weight: 800;
       color: var(--primary);
       text-transform: uppercase;
       letter-spacing: 0.04em;
       border-bottom: 1.5px solid var(--border);
-      padding-bottom: 3px;
-      margin-top: 10px;
-      margin-bottom: 7px;
+      padding-bottom: 2px;
+      margin-top: 9px;
+      margin-bottom: 6px;
       display: flex;
       align-items: center;
-      gap: 6px;
+      gap: 5px;
     }
 
     .section-title span.badge-num {
       background: var(--primary);
       color: #FFF;
-      font-size: 7.2pt;
+      font-size: 7pt;
       font-family: 'JetBrains Mono', monospace;
-      padding: 1px 5px;
-      border-radius: 4px;
+      padding: 1px 4px;
+      border-radius: 3px;
       font-weight: 700;
     }
 
-    /* ──────────────── PROFIL / SUMMARY ──────────────── */
+    /* ──────────────── 2. PROFESSIONAL SUMMARY ──────────────── */
     .summary-box {
       background: var(--bg-card);
-      border-left: 3.5px solid var(--accent);
-      padding: 7px 10px;
-      border-radius: 0 6px 6px 0;
-      font-size: 8.7pt;
-      color: var(--text-main);
-      line-height: 1.38;
-      margin-bottom: 8px;
-    }
-
-    /* ──────────────── STATUS BANNER ──────────────── */
-    .status-banner {
-      background: #F8FAFC;
-      border: 1px dashed #94A3B8;
-      padding: 5px 9px;
-      border-radius: 6px;
-      font-size: 8.2pt;
-      color: var(--primary);
-      margin-bottom: 8px;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
-
-    /* ──────────────── SKILLS ──────────────── */
-    .skills-section {
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
-      font-size: 8.3pt;
-    }
-
-    .skill-tier {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
       padding: 6px 9px;
-      border-radius: 6px;
+      border-radius: 0 5px 5px 0;
+      font-size: 8.6pt;
+      color: var(--text-main);
+      line-height: 1.36;
+      margin-bottom: 7px;
     }
 
-    .skill-tier-header {
-      font-weight: 700;
-      font-size: 8.3pt;
-      color: var(--primary);
+    /* ──────────────── 3. SPOTLIGHT PROJECT (PROOF FIRST) ──────────────── */
+    .spotlight-box {
+      background: linear-gradient(135deg, #F8FAFC 0%, #EFF6FF 100%);
+      border: 1.5px solid #BFDBFE;
+      border-radius: 7px;
+      padding: 7px 10px;
+      margin-bottom: 8px;
+    }
+
+    .spotlight-header {
       display: flex;
       justify-content: space-between;
-      margin-bottom: 3px;
+      align-items: center;
+      margin-bottom: 2px;
     }
 
-    .skill-tier-content {
+    .spotlight-title {
+      font-size: 9.2pt;
+      font-weight: 800;
+      color: var(--primary);
+    }
+
+    .spotlight-pill {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 6.8pt;
+      font-weight: 700;
+      background: var(--indigo-bg);
+      color: var(--indigo);
+      border: 1px solid #C7D2FE;
+      padding: 1px 5px;
+      border-radius: 3px;
+    }
+
+    .spotlight-metric {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 7.6pt;
+      font-weight: 700;
+      color: var(--emerald);
+      margin: 1px 0;
+    }
+
+    .spotlight-desc {
+      font-size: 8.2pt;
       color: var(--text-muted);
-      line-height: 1.35;
+      line-height: 1.33;
     }
 
-    /* ──────────────── EXPERIENCE ──────────────── */
+    /* ──────────────── 4. EXPERIENCE (CLIENT / MISSION) ──────────────── */
     .exp-item {
-      margin-bottom: 9px;
+      margin-bottom: 8px;
       page-break-inside: avoid;
     }
 
@@ -295,30 +304,30 @@
       display: flex;
       justify-content: space-between;
       align-items: baseline;
-      margin-bottom: 2px;
+      margin-bottom: 1px;
     }
 
-    .exp-role {
-      font-size: 9.4pt;
+    .exp-client {
+      font-size: 9.2pt;
       font-weight: 700;
       color: var(--primary);
     }
 
-    .exp-company {
+    .exp-role {
       font-weight: 600;
       color: var(--accent);
-      font-size: 8.8pt;
+      font-size: 8.6pt;
     }
 
-    .exp-engagement {
-      font-size: 7.8pt;
+    .exp-mission-type {
+      font-size: 7.6pt;
       color: var(--text-light);
       font-style: italic;
     }
 
     .exp-dates {
       font-family: 'JetBrains Mono', monospace;
-      font-size: 7.8pt;
+      font-size: 7.6pt;
       color: var(--text-light);
       font-weight: 600;
     }
@@ -326,22 +335,22 @@
     .exp-bullets {
       list-style: none;
       padding-left: 0;
-      font-size: 8.3pt;
+      font-size: 8.2pt;
       color: var(--text-muted);
-      margin-top: 2px;
+      margin-top: 1px;
     }
 
     .exp-bullets li {
       position: relative;
-      padding-left: 12px;
-      margin-bottom: 2px;
-      line-height: 1.35;
+      padding-left: 11px;
+      margin-bottom: 1.5px;
+      line-height: 1.33;
     }
 
     .exp-bullets li::before {
       content: "•";
       position: absolute;
-      left: 2px;
+      left: 1px;
       color: var(--accent);
       font-weight: bold;
     }
@@ -349,82 +358,63 @@
     .metric-badge {
       display: inline-block;
       font-family: 'JetBrains Mono', monospace;
-      font-size: 7.4pt;
+      font-size: 7.3pt;
       font-weight: 700;
       background: var(--emerald-bg);
       color: var(--emerald);
       border: 1px solid #A7F3D0;
-      padding: 0 4px;
+      padding: 0 3px;
       border-radius: 3px;
     }
 
     .source-tag {
-      font-size: 7.2pt;
+      font-size: 7pt;
       color: #64748B;
       font-style: italic;
     }
 
-    /* ──────────────── SIGNATURE AI SPOTLIGHT BOX ──────────────── */
-    .spotlight-box {
-      background: linear-gradient(135deg, #F8FAFC 0%, #EFF6FF 100%);
-      border: 1.5px solid #BFDBFE;
-      border-radius: 8px;
-      padding: 8px 11px;
-      margin-bottom: 9px;
-      page-break-inside: avoid;
+    /* ──────────────── 5. TECHNICAL STACK (SPLIT TIERS) ──────────────── */
+    .skills-section {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      font-size: 8.1pt;
     }
 
-    .spotlight-header {
+    .skill-tier {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      padding: 5px 8px;
+      border-radius: 5px;
+    }
+
+    .skill-tier-header {
+      font-weight: 700;
+      font-size: 8.1pt;
+      color: var(--primary);
       display: flex;
       justify-content: space-between;
-      align-items: center;
-      margin-bottom: 3px;
+      margin-bottom: 2px;
     }
 
-    .spotlight-title {
-      font-size: 9.3pt;
-      font-weight: 800;
-      color: var(--primary);
-    }
-
-    .spotlight-pill {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 7.2pt;
-      font-weight: 700;
-      background: var(--indigo-bg);
-      color: var(--indigo);
-      border: 1px solid #C7D2FE;
-      padding: 1px 6px;
-      border-radius: 4px;
-    }
-
-    .spotlight-metric {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 7.8pt;
-      font-weight: 700;
-      color: var(--emerald);
-      margin: 2px 0;
-    }
-
-    .spotlight-desc {
-      font-size: 8.3pt;
+    .skill-tier-content {
       color: var(--text-muted);
-      line-height: 1.35;
+      line-height: 1.33;
     }
 
-    /* ──────────────── PROJECTS ──────────────── */
+    /* ──────────────── 6. MAJOR PRODUCTION DELIVERABLES ──────────────── */
     .projects-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 7px 9px;
+      gap: 6px 8px;
     }
 
     .project-card {
       border: 1px solid var(--border);
-      border-radius: 6px;
-      padding: 6px 8px;
+      border-radius: 5px;
+      padding: 5px 7px;
       background: #FFFFFF;
-      font-size: 8.2pt;
+      font-size: 8pt;
       page-break-inside: avoid;
     }
 
@@ -432,20 +422,20 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 2px;
+      margin-bottom: 1px;
     }
 
     .project-card-title {
       font-weight: 700;
       color: var(--primary);
-      font-size: 8.6pt;
+      font-size: 8.4pt;
     }
 
     .project-card-tag {
       font-family: 'JetBrains Mono', monospace;
-      font-size: 6.8pt;
+      font-size: 6.6pt;
       font-weight: 700;
-      padding: 1px 4px;
+      padding: 0 4px;
       border-radius: 3px;
       background: var(--accent-soft);
       color: var(--accent);
@@ -454,44 +444,44 @@
 
     .project-card-metric {
       font-family: 'JetBrains Mono', monospace;
-      font-size: 7.4pt;
+      font-size: 7.2pt;
       font-weight: 700;
       color: var(--emerald);
-      margin: 2px 0;
+      margin: 1px 0;
     }
 
     .project-card-desc {
       color: var(--text-muted);
-      line-height: 1.3;
-      margin-top: 2px;
+      line-height: 1.28;
+      margin-top: 1px;
     }
 
     .project-tech {
       font-family: 'JetBrains Mono', monospace;
-      font-size: 7.1pt;
+      font-size: 6.9pt;
       color: var(--text-light);
-      margin-top: 3px;
+      margin-top: 2px;
     }
 
-    /* ──────────────── EDUCATION ──────────────── */
+    /* ──────────────── 7. EDUCATION & REFERENCES ──────────────── */
     .edu-grid {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      gap: 8px;
+      gap: 7px;
     }
 
     .edu-item {
       background: var(--bg-card);
       border: 1px solid var(--border);
-      border-radius: 6px;
-      padding: 6px 8px;
-      font-size: 8pt;
+      border-radius: 5px;
+      padding: 5px 7px;
+      font-size: 7.8pt;
     }
 
     .edu-degree {
       font-weight: 700;
       color: var(--primary);
-      font-size: 8.5pt;
+      font-size: 8.3pt;
     }
 
     .edu-school {
@@ -503,24 +493,23 @@
     .edu-dates {
       font-family: 'JetBrains Mono', monospace;
       color: var(--text-light);
-      font-size: 7.5pt;
+      font-size: 7.3pt;
       font-weight: 600;
     }
 
-    /* ──────────────── REFERENCES ──────────────── */
     .ref-grid {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      gap: 7px;
-      margin-top: 4px;
+      gap: 6px;
+      margin-top: 3px;
     }
 
     .ref-card {
       background: var(--bg-card);
       border: 1px solid var(--border);
-      padding: 6px 8px;
-      border-radius: 6px;
-      font-size: 7.8pt;
+      padding: 5px 7px;
+      border-radius: 5px;
+      font-size: 7.6pt;
     }
 
     .ref-name {
@@ -530,21 +519,21 @@
 
     .ref-role {
       color: var(--text-muted);
-      line-height: 1.3;
+      line-height: 1.25;
     }
 
     .page-footer {
       position: absolute;
-      bottom: 6mm;
-      left: 15mm;
-      right: 15mm;
+      bottom: 5mm;
+      left: 14mm;
+      right: 14mm;
       display: flex;
       justify-content: space-between;
-      font-size: 7.4pt;
+      font-size: 7.2pt;
       font-family: 'JetBrains Mono', monospace;
       color: var(--text-light);
       border-top: 1px solid var(--border);
-      padding-top: 4px;
+      padding-top: 3px;
     }
 
     .page-break {
@@ -569,7 +558,7 @@
         margin: 0;
         width: 100%;
         min-height: auto;
-        padding: 10mm 12mm 11mm 12mm;
+        padding: 10mm 12mm 10mm 12mm;
       }
 
       .page-break {
@@ -587,11 +576,11 @@
 </head>
 <body>
 
-  <!-- Top Action Bar for user (hidden on print) -->
+  <!-- Action Bar -->
   <div class="action-bar">
     <div class="action-bar-title">
-      <span>📄 CV Professionnel 2026 — Christian Jordan KEMINSI</span>
-      <span style="font-size: 11px; opacity: 0.8;">· Format 2 Pages A4 ATS-Ready & Sourcé</span>
+      <span>📄 CV Professionnel — Christian Jordan KEMINSI</span>
+      <span style="font-size: 11px; opacity: 0.8;">· Structure Prioritaire & Sourcée (A4 ATS-Ready)</span>
     </div>
     <div class="action-buttons">
       <a href="https://jkeminsi.github.io/christian-keminsi-portfolio/" target="_blank" class="btn-portfolio">
@@ -606,47 +595,122 @@
   <!-- ════════════════ PAGE 1 ════════════════ -->
   <div class="page-container">
 
-    <!-- En-tête -->
+    <!-- 1. EN-TÊTE : BANDEAU COMPACT & STATUT EXPLICITE -->
     <header class="header">
       <div class="header-left">
         <h1 class="candidate-name">Christian Jordan KEMINSI T.</h1>
-        <div class="candidate-title">Full-Stack & Systems Architect</div>
-        <div class="candidate-subtitle">Spécialisation : API Haute Performance & Architectures Web Résilientes</div>
+        <div class="candidate-title">Full-Stack Engineer & Systems Architect</div>
+        <div class="status-line">
+          💼 Consultant Indépendant · Missions & contrats parallèles pour clients internationaux (USA, Canada, Cameroun)
+        </div>
         
         <div class="contact-grid">
           <div class="contact-item">📧 <a href="mailto:jkeminsi06@gmail.com">jkeminsi06@gmail.com</a></div>
           <div class="contact-item">📱 <strong>+237 672 309 295</strong></div>
-          <div class="contact-item">📍 Yaoundé, Cameroun (Remote Ready)</div>
+          <div class="contact-item">📍 Yaoundé, Cameroun (Remote-friendly)</div>
           <div class="contact-item">💼 <a href="https://www.linkedin.com/in/christian-keminsi-376479215" target="_blank">linkedin.com/in/christian-keminsi</a></div>
           <div class="contact-item">🐙 <a href="https://github.com/jkeminsi" target="_blank">github.com/jkeminsi</a></div>
           <div class="contact-item">🌐 <a href="https://jkeminsi.github.io/christian-keminsi-portfolio/" target="_blank">christiankeminsi.dev</a></div>
         </div>
       </div>
-      <img src="data:image/jpeg;base64,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" alt="Christian Jordan Keminsi" class="header-photo">
+      <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAEEAQQDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDiWFC5qReetO2+1ACKOBUkY9qRQOBUqjB6UCDbzUgXAoX5qkUetAxoXilxzTyBSbeaAAA07b3p6DPFLsxQBEBzUir60BPWnKOPWgBCpFGKkA7GjbQAzFLilFOxxQBHjijrxT8cUgGKAG4xRilPWlX3oAaM08J3oxlqf2oAjPWmtnFSAE9qa4xQBGAc048U5BSMOaAGEUmKDkHig5NADGz2pvWnsecUx+KAGMKbin4JNIaVhDcUUuPeigCqo4pRzx0py07aaYxETB5qTvQoFPVcUACjpUyio15qVBxQAoAIpyqN1CrzUqrQAgTAyKeFyOadjIxS44oAj254o2YFTEYWmnkdKAGBecmnSBVBJIAHUnpVPWdVs9JszcXkmB0RB95z6AV53rWvajrMnLGC1B4gQ8Ee57mk3YaVzstS8T6TZsUSU3Ug/hh5A+p6ViXHjO9bHk2UESnpvLMf6VzlvDGdp2nOcHipplTHbAGTk9e1ZObNFT7mjJ401ZDzFbEe8ZH9as2Pj5C4W+sdo7vA2f0P+NcffDlTjJAPHrVF1fJbAUfnVKRMoWPZtL1fTtTTNndJI3dDww/Cr4FeFwPJDMksbtHIvzBlOCDXceFfGzeYlprRG0nCXOOn+9/jVpkHeqDmpsA9qZGVYBgQykZBByDUhpgNOB2qJutSkZpCtAEajmiTPHFSbSBSMBigCDFAHNPIpq+lADXA7VEy5qwygdKjK8UARgUjDA5p+CKawNAEWPein4opAVwucVKemMU0ClAJpgCrg57VIBxSDOKkRcmgBFUk1MqjFKqgDNPxxmgBFWpF4oVeKcRxigBVFSEcVGpwKkRhigAAz1qnrN9BplhJd3B+VRwo6sewFXBy1cD4oun1fWjGjZtLUlF9C/8AEf6VMpcquVGLk7Iwr64utXvGu7zlm4Rf4UX0FSR2exRkbgO1a9tZx7V+UZFbmjaYs7gsmR/KuR1bs744flRzEFjMyK2whQuSpH606bT8KMxlVwNqnr7E16nZ6ZaouGgUk8kkdao65pdvsEixDI5P1HSquJ02eP3sG1gvO/aTtAzgDIFZcw5O1cn68V3Gp6dEssjlRucbeewrAmsYweOfrS50iHRkznRG5252gj9Kkwzjb1GKvS2Shsg4Pt0qS3tVKADqK0U7mMqTN/4feI3sZo9I1CTNvIcQOx/1ZPRfof0r0nac14xqVsFETHrgDivTfA2rHVNCjaVsz258mU+pA4P4jFaxdzGSszbKHNLgA8ipAPSmN94mrEIw4qJxUm7imDmgBNny80wrjmpT1pDzQBEVPc03Ye9SMuTSdBQBGQB1qKTmpnwBULUAMopcUUrAQjk09BQq81IAfSmAY5qVMbemDSKBnmpABnNACICRUiA4xQq805cZoAdjAp46c03qfalPGaAEHXilUZ9qIxk5qVRQBS1ic2ek3V0p+aKJmX644/WuH0GJRGFPLEZJx3rr/GHHhu+x/wA8/wCorkdG4dXPQ965sQ7JHZg1eTNKFNr4xXWeGBHuVWxWAsW6cEDr3xW/okREgwSPpXJDRnozV0dYIo9ueKy9ZjUxEAcitFIiYs5JGKztRTgr+ZrVzM1A4LVosOR75rnL3aua6zWISZWxzg46VymoW0pJzwK5+a7NnGyMS5cbsUtq4DDNFzBtOSTx7VBGcNxXRBnFUWpa1AGXy8fpXR/DB/I1W7tc5WaES/ipx/WsK1USBSccdjW14ABHi88DH2V+fxWumDOKqtT0PODS4B4xS460q8CtjIiZeKbwKlkqIYoAB3zRjI6UvPpnNOYbVz3oAiNNYZpRyeaV+lAELgd6hYc1Mc1E3XNAEZBFFKc5opXEMj5GamUEiolAH0p6nvmmMeAakHampTyBmgBy5zjqKeoAP1pEGaeRigBc+1L97ikAzTwB2oAcmFHSnjBHFNxS4wMigDO8QwmfRL2IDkwNj64zXC6exMMZBzxzXpMqiSNozyGGD+NecW6iztHD8+SzAj6E1y4lXR2YN2kzqdOBkjU45PHNdJo1sVId8Adia8xjbVZYzdqWlYAFIIzyKZdeK9fsmAnju7aNgNrBM9/UViqd1ozrdez1ie5FwE2gg5XnFYeqXCpGVU5xxXldl471SSZR57SIvquDW7DrpvIzK/yu3asJ3idNKcZm3tV0ZzyBzXN6yiM55xUt3rKQw7Q2OcnmuE8R+Ipo5SICOvXrUQTk7IqrOMI3Zo38aKwVmAz2qhJFEpBEq89Oa5SSbVtWkzEZ3b16Cg6ZqqOPPyB7NyK7YwUdGzzJ1nLVRO705GU4PQ10HgSPf4puXyf3dsQeemWX/CuO8IyTqrW07lx/CSOR7V1PhvXNM0PUr438xEs7IqKi5IUAksfQc1tDRnNPU9DxzSEHNOjZJEWRCCrAEEdwaUnBxW5iRFDzTVj45qbpzTDk0AJgLyTUbNk1IVBHWmYOKAGBfXimvy2AaeeR16VGevFACOBj3qFumKmkI+lRnkcUgIqKUjmii4EBBIqSIcYpgqSMfNTAkCk9KkUHODzSAVLH05oAFwDg1JkY6U0qCeKd0HNACjpSqcGgeuOKkAXHpQAcduKOaaRk9aeOR0oAwvFurNpK2L7HaKafypChwVBHB/OufuYtk8o3GXexfJHPPPNdV4g09L6zRZBkxyq6/XNYNqxOouZB82cVwYhtSa6HqYSMXBNb3Oel1i8tbmOGCJ97ttQKm5mb0GcAfUmqnjPxPrFoG0+9iFvfI+xraQguBtyG4Xbt565r1eHSPtMKSRfK4GR8oI/WsTxJ4Vn1KRPtFnZu6gKJWABAHQDBP5VnTlDqjatTqfZZ5OLbVhLCbqyZHmUOrKMLg8jJHGfrXfeFfD91chVnV43yFKMMEGt7RvCbW7mactcMO7D5f161uablLxAnLB8s3vWdWa6GtCk1qzzPxzpcthI8fOa81EU9zfiI8ZfYoPJY56Af1PFe1fEuOSW/ZiuOK4zTLJY7vzo0GT95TTpTUdyK9NyaSM/xLpl/4V0i2eSUJLdKDEE/eJ7hnBABHHGD161jIupT20FyJvMllJJjXIKj1OeK9B1G0kvI1G5lI6BxuArP/sKUHfPLvx0CjArb20bbHO8PPuYWky3Szx+agDg8kDrUfjKLfcXRSTE5iDBe5HGR+VbjwJHINowVNZOuRGXxdpaAf65VVh7Bsf1rSMuZXMJR5ZWZ7Zo4ZdJtFk4cQIGHvtFWuMU0oBwvQcUpxjAFdaOITOV9qaQRS4+U0jZwBmmAnFMZucLSvximlMH60AJt560hG2lYEMOcUOQBQBXl+9SDGKdjc2aRgKAI2HPFFBBz1ooArrzxU6LxxUYB7VLEaAHr6GplTA69aibk8dqcCcc0ATKPekwTxmkj54qUAYz3pAIoIGKeMAYNN5607gsDTAUYpyg5pAMGnqRigCG63LA7Lyw5A+nNcen/ACF5QcjL9K7XqTXFazix1+VR0IVxn3FcmKg2ro7sFUSfKz03w0ySWYV+Dj8qvT20MfznBX3rhdD14QxBSce9S6j4hlu3S1gJy5xnNefDY9iRv6tqVsLd4kkG4cYFc5BNI8oFuDnPaoPEDz+HtNTUbexbUQv30HJLep9qzdK+IeoJ+/n0UaekyELujUj8+1VKm5ahGrGOgzxat03LqWznqO9cuguLUi4eJigPzeoHrUnirxtEYmaWRcnoq9SfpXJHxbrF7IsMVntgPHPXH8qdOnJq5jXrU1LfU9NtLu3ngBBVsjiquoMEiIDVyWj3dxDEBJkHOcVdvNT3JjNS4Weg1WTjqMkkPmnvzVvRrBtU8RWSxjIiw7tjogbJ/pWGbk8nuTXpfw2to00I3RjXzpnKl++0dB+ea9ClHSx5NafvXOn3fNn1px96YVbNISc4Y10nIKGG05pjMMcClwOaQgEGmAg5Gab940qj3pQMGgBG2kc9RULc/SnyUw5xQAzp0pjg4p7YwM01iCOKAIjnNFLuFFAEK5Ap46ZFMA9Keo44oAep5qWPmoUAzUwB6CgCReDUg6VGqnGRUi5xSAei5GQadgA800Djg09R3NMAwSSe1LuwenFLtPPNJwoyaAFJGOOtcf4+tyt1bXPPzIVOPY//AF66443VjeMofO0oTYz5Lgn6Hg/0rOorxNKTtNHFw3EgAUGun0TyYYhO/wDrX7nsPauWCBZM9Vq5c3r28QZFZyq5CjvXE4pvQ9RVGlqd5DK88aosZKnuar6vok11ZNHH5GP7rH/61cXBrmsSSKBYXqt0WLyTx+VXDqHikxl20292YPRacadlqNzcvhVyjrfh3TI3YXEEEc4HO3DH61z7WVrCflIXHfFad/B4mvi9wmmXPpyuP51z19pviGPLXFoYx6NIAfypqK7kzjJa8pJcSmFgwKsvqKo3UpfDITg1n3T6gLkQeQVQHLux6/SrVsCy/Nzzmr9mkcvtGTQEtMiH617d4Qt/s/hmxTGCY95/Ek/1rxbSYWuL5FRSWkcIox6nAr32CJbe2jgXpGgQfgMVtTRz1GDHHFMKjGe9PPApj5C57VsZEQOakwKZH83OKU59aAEI96DjHNNBweaa57etADGJJpG4XmgHbxTX5GBQAxun1qEg5zT2ODzTW5FADS1FKAKKAG4wM0qDvTUIx1qVCCOeooAfEh3dKlYY4FJGfSnj5uaAFTNOBpcfLTelJgSKcUkjkcd6YHwaVnyM96YEiOdvJ5pTkleeKhDVJGecUAShQWpt1bR3FtJbSfckUqafyORU1pE9zOkKDLOcfSmo8zsgbtqeX39tcWV21pcIVeM9exHYj60W4H2iGQjKqfTrXXfFy1ij8TBUBwtpFwPTBHH5VxkTkL6Dr16VlXocknFdDpo1uaKb6nSpqSQHe4PlHuOq/wD1q3bXxja/ZDC1xbuu3AZsZWuJhkWYKoLDd3PSq+o+GluhuaAEkdq5L23PQjNr4TrNU8aW6WxhW7gUHJJGPT/61eda/wCIobqdjHP5pP8AtVn6h4atYJNphXcegqhJpy2oyiAAelUuUipWqSVmLcXJlBdhg4wKjtsi23c/MajlKuOCCBTWnEMS7xjsq+/pWsUcMpHafC23t5/E0Rn/AOWSM8YPd+3+P4V66/BrwjwZfvF4l02OJv3ksrM2OyhT/XFe6xuJY1kHcdK6Ix9zmOeT96wjEGmsfl205sCopG5pIBF+VsZpJCAcUe5NRHLHOeKYDnxjimDGKUEAEVGT1oAViBx3pkhwKGIOBSE460ARMMnmmv1xUhI61HIwBoAQNjg0U3r1ooAjXgA1IhIf1BquGPrU0Z4zQBbiODUik8gVU3kHipVZiMigCzuY8UD0NRRsc1K2RzQA3Hzc0p5bikYZ5qextLq8nEdrC8jd8DgfU9qaTbshN21ZGi4fmrdta3N0/l2sLyP/ALI6fU10um+GIUCyX8nmv18tD8o+p710ECQwxiKKFI0HRUXFd9HATlrPQ5qmKitI6nMWXh3yohPqdwFQdY4zkn8f8K3bG0ijX9zCsKDgKBz+J9ai18OIIugZpkCg8jqK0UBRSO+STj3r1KVCnSj7q1OGdWc3qzzP412Yt5NP1o5EJ/0O4P8Adzyjfnkf8CFeX6lbSxtvjxg/eHY19DeLNIt9e0G90y5XdHcRFfoeoI9wa+frSWW3nn0TUmxeWvyFsfeHY/jXjZpSdOaqx67nq5fUU4uk+hk3GqPaxKkX3hyQ3HPp/OprbxXN9mwsjBjzgnnp/kVNq2n7kYtHuBGMg8Vxup6c8Em6CQlQejV5loTO5upTZr3Guh956yHnnqK5681KaVSGctk+9Zty1xG+CpyOM5qJnd+WJz6k9KtU4oxlVnLctQ3BiHmMeB0Hc+lQTXjSyebIeew7AVXkbPAqncM7FYowSzHAA7mnvoiNjufhFDLfeLHv3BMdvGVX6mvWNev7jTHhvreVlQt5cqjoc9Diub+GGjDStFj3jEsnzOR61t+KsvoU4XG5GVhke4r2KVLkppM8+pNyndG7Za2kqgXCDkZ3p0/KtGOSOQbkYOD6VwmiPJJaxMPmUccdceldDaOFw8TFfUdxUTwilrHQqNdrc2HBPShQwFJbys3DgE1KTnpXHUozp/EjohUjPYiI5zTGGRzT2JWmM/WsjQikOOlMZgRzSuxByaaTmgCN88YpGBxwaczY7Uzd3NAETK2eWxRSsQTmikAgC5p/TpTR92gUwJgmRnrU0YIFNixipVBYhVGSTgAd6AHKO9W7S0ub2UR20DSt3wOB9T2rd0Twu5Hn6plEH/LIHk/U9vpXWwwRwxiG3iWGMdABj9K76GBlNXnojlqYlLSOpzOn+E1wJNQn+scX9TXQWkcNtAIbWARxDpgYB/HvVhlCAsSSR0J7U1yGXHfivSpUYUvhRxzqSnuxpyM5b8BxUsagAjAA9BUGTznpViMgqfpWxmZfiUn7NER0jkV/yOa0IWE0IlHeq+qxiS1cYzxS6Gf+Jf8AMckNg/kKpfCT1J844rxH45eHJ7W+XxJYxsGhUmXH8SZyfyPP4mvWfF2v6Z4X0OfWdWm8u3iGNq/eduyqO5r58vfjHq/iTxFb25sLWHRjLta0Iy8iHg5c9Dj0wKwrRjUj7OXU1pSlCXPHoV7DUo7y3DK4OR0qpqdsjKXB2t145qfxR4O1LwtK2o2YeXSZsSRhlKyQq3IDKe3+0OPpWSNREkePb1r5SrRnQnys+lp1o1oXRz2qQSCThkNZckJHLmukvGjb5vL5+tZM6GRuFwKqMrmUqeplSKQua6j4X+GW1bUW1K4TMEBIjGPvN3P4fzNR+GfDVz4h1H7NGwht4xvubh+FiT1Pv6CtzU/GZ8OXUdh4at4DptsnlDzk+abHVieoya9HB0Lv2ktkcOJqW9yO56VbQCBNqjAHFZ3icldGn/2ii/mwpvhDxLZeJ7Bri2Vop48CaFjkqfUeo96n8Tpu0WVcHPmRY/77Fek7PVHBs7EOg2/l2KDFa1tGxcEDrxx1pLSHy7SMetalnbjAPvWiiS5C26yEDnPPcc4q+uwDa4PPQmokZUAG3JzU7Idqvjr1q3EnmIprKR/miOR6GqckbJw4wa1YVP8AAxXnt0/KpflkTbNGGz1wM1xVcDCWsdGdMMTKPxamCdveoyVGRWhe6eyBpYjuiHPXkVnttrzKlOVN2kdsJqauhpFRcEHJpZH4wKhY+tQUI2AetFRlueDRSAsJ1qSNATzUUZ9amjIpgSxptrtPBOhrIq6ldLxnMKkf+Pf4VzWh2TahqMVuM7CcufRR1r0+DbDCkaAKqgKoHYV6GBocz55bI5MTV5Vyok2bQX/i9fWk4Jz6U7zB8w9aqTS7dxGQGFetucNySdg6naOBVZmKls9KS3kymPWluFyrY4ppEtjImJYj0NW4iazoyVYg8k1oRsBH2psSYTgMrL61DatDaWNxLPIkUUZMkjscBVA6/pUrt7VzXj/RLnxD4fl0u2vXtVkYGUqM71H8J9qSGz56+Lni+58e+LY7OyEi6XbMUtUP8Z7yEep/lUGleBbq01KFpkI3DdH7+or13QPhrpellZNoeRcEsw5rrdQ0W3mtBCQAUAaN+6n2pxpRbvIJVHa0TltV1LVb/RdOsbxYp/sxKNJJkM0ZXGwnpjkHnrivJPiD4Zbw9cQ3MIdbW6Y7AQMI3UgYJr3izhDxNDIgWZRtkB6H3+lc14y8Lrf6XLAoyjHei90bsV/wrHFYKNWk4RWvQ2w2KlTqKTenU8KtYp5zwpPPpW3pnh9rqQLLItvFjdLKwztXvgdz6D1q/p1m1ndtb3EYWVDyPUetdjpFsTY3mpfKlrZwM0jMMhmPRfzxXy9ClKVdU2uup9HVnGNF1E+mhxur3kFlpZsNMQ29grdx88x/vOe59ugrhZrSXUbwJGhxmun1S5fXNR2wL+6yQuB+tdNoPh2O1tfMZPmx19K+lVNS0Wx865uOr3OT8J295o2sJc2akhfkkTs69xXp+oNFdaWrRHcJXjwO4+Yf4GodK0JVRXZMk5Y1qx6LlU2PtUSByPXFbey0MefUsW8WSi44Wrp/dx4FLbw7cZ65pGXccH1qkhXJLKLzGDEd60zEDGq1BZKqRg+1W7b5zkinYVyCCPa5GO/rTnUIrPx0qaJP3x46VS1icKFgTl3OAKVrFJjblzJF5ZJAcgcHFZGpQeU5dBhScH2Nas4DugPAQlj+A/8AriqU0iSwFW6HiuXFUlUjbqbUKjhK5jO2DUTnceDSzAq5U9QaZyteE1bQ9NO47AHFFMMgzzRQMnDDPNSqfSoNvvVi3RnkSNeS7BR+NCVwO48B2nlWTXbj55jhf90V1IbjGaoabCtvaxQJ0VAOKs7v3uPavpKVP2cFE8ic+eTYsspVyB1qJ8tG6kcrTGO6Ujvg9fzpu7bICejcH61rYxb1IYnKjac5Bq8p3ISRyTVBkKu/tirVqTsfPQUMExJE2tntUkDnGKCMg/1qPGCSPQUrgWpTxUO7O4deKa0mcD2zTIsb2PrSHcrvwG4p7ZaEHvimvgsw9qVeIiPQVdyTLv4S5E0XyzKPzHoaIgl5bHAwwGMHqrdammyM/SoI8xziRAeR8w9a1TJZwnjPQjqCxXln5cF1BJ5dyXbaqrnlj7Dr/wDrrhvHfic3VpH4e0MSJpUPDPjDXL9C7e2egrvvG9nca8NRTTbnyYLXKygDPnSIuSDzwBk4965rQvCoEMPmR/M7gEnn3/pXBKNOdWUqe+zOtVJxpxjPboZPgfQpFVJJE5PNegvaBIEXGMnFaelaRHbwABBwKddIvmxqATzXXCCirHPKV2NtIFwq4HC1YCdAOmangiw4+lLtxjiqJK0ceGB/GmGPa/Q1YjXJ5okAEh4HWpsO4QDmrlmuX9aoK373PvV+xYGQcZyaAuSqoVmY9CK5FrlrrxFMwJ2Q4H411Wov5NtKwPRa4XwlIJkurokt5szHPsKl7pFLa50CP+5u5iDhcKMn2yf5ispJN0Bbrliaua9L9j0J2xhpM/rWbH8tgrH+7k1lV3sXDa5DeElg69ehquzt3qw2GjPrjNVmrw8TDlnfuenQleNhhZs9qKOO9Fc5sXFU9zWr4Yh+0a1bqeitvP4Vk7jiuk8Bxbru4uSP9XHgfU//AKq3w0earFGdaXLBs7eOQZBHdttJO5j+ZT8wBIHrVVJM2e8HlXz+VFzJmMke9fRnkiy3CrtmydjnP+NK+Sp3YBBBGBWReykWchz0+cfh1FPhvftEcUi+YxlQA8gKPrVJGb3NlxvBPqBU9uoCt9KpRyYQAnnAzViGVRGVwc8VEkNFhjtGKhdgGP8Au02R/mPXtTM7nbPpSSAcjYfHXIpN3zfh600Eg5x1FNlO0Zx2oAjZhv8AwqRT8hHtVZsEgjpipk5X0qxEMgGW4xx1rO1a/WxtZJQBuWNmH4KT/Sr9y2ws3+z1rjfEcxu7gwAnAQ/rx/WriS2Y/hSyuJpZi0sojnYvKu8gMc9x3rtPKhhFmqoAPtGOn+w9UNAt1hYDHO05NaF58i2zf9PAP/jpH9amMUthuTZdwNvSseT57wDHQE1sbdtszsD04zWNZZku2bHY/wAqpCNKMAOM+hqN+wA/zmpF5PuM0hA+XikBCuP1olQ7+O9IeMjGKlkxsRqVhkQhAI4p8D+XMAelVdR1CO22k8k9BVWG/jkwScGlcdi34sufK0C8kBwRETmuR8EKy6dBHySef8/rV7x7qESeF7xC+WaMjAPaqPgEq8EOSSFXdU398r7Jb8d3O66tbBTwWBIHoKZqTeVpw7ZUCsW4u/7R8SXE4OY0lEKe+OtaXiZyr29uvVsE1hKV+ZmqWyGNJtkQHoVApjHGar6k+y4Ren3amm++fzrzcbHRM68M9bEZPPWimkjPWiuA7DQXp1rtPA0QXR537yTbc/QVw6tivQPDA8rw/b5/jYtXdl0b1b9kcuLdoFu3kxauuc4cjFMWTNuc9gR+IqMfI1ymejhh9CKpX0jqsqRkgOuR9a9yx5xGbtHjeHPO7ge1YtrqIs5JLCZypXJXBwSM1R1a4ntiSyuwIwSDiuf8TTzSabFrELHzYPlbHUj0/Kmn0Ja0ueox3jPbxBCNzKOa07CJgpZnJNcr8PrpNZ0S11BGBQpjB9QSD/KuyGEUjPapYDmzhh7UvQN7imFs9c800sc+1IB2TsJ6YFRTtwy89OtPYkK2P1qKVhtLf7OKEJiNhYyQDwOtPib5M+3WoHJ8nr2NJHJtgJz261QitrE2yJj/ALPauUt/313Kx/ugfrW1rs37k4JHHWsbRBl5SfUf1rREs2NNAWUDnhetW78Z+yccG5WqlhxckYPQ1fuFGbMHtcL/AOgn/ChgibUn22xAGPlrL0deWY55Bq9qjDGP9mq2mKF4PoTSGWRgIGxnNMBzzj6UoOABioVbG4H8KQCSHjNNaXAxzxzTJWySAagkcAY5pAUtQQTOCecVkXkMiAyoTgVqTvgg571UncPGUx161lJmqOT8WymTw9e7m58sYz9RTdA1kaZ4Yvb7dlo4xGg9W7Vn/Em8isdDuWilVt21QOuTkViee39i6XowyZ5G+0TD6/dFYOpaTt2NVC6R23g2zLeQ8mdsfzsSOrNyafPcnUvFPlKSURtv4CiInRNHe5upvMuJFxEnZff8qf4Mtf3U+pS8ZBIzRbaIeZBq0u7WCq8gOAB9K0bgYbPqKxrdjca3nBODmtzVF2Og/wBmuXER5qUmbUnaokUmxmimEnNFeVY7y9uy2Olej2AMOg2insgzXnFuvmXMaf3mA/M16TdN5ekxgY4UV6uWR1kzixktEhsrf6WjdpYsfiKz7kb1kj53j7tWiwazhl/uOOfbpVLUj5Vwz9j7V61uhwXtqY90vmBt4z6g1z+qW6XNlcWQA2yKSAPUD/D+VdTqUBz5sR6jketchr0z2riePIKgH6U1qrMHpqjN+Feuy6PNdaEku94pfMjRjyVPDD8Dz+Ne0Wt8t1bpIAVJHIPY18y+L47i01mz1XSpvJkuZFCSA/dLYGD7dRXvukyTQ20MVyR54UbyOhOKzTu2h20TOmVvf0p/QEmqMUuRnNWNxIIyfeiwh8jfKcGoZT8vfpinv90moJz2yelUhMbK/wAhxkYFV5JcRsO9PkPb2qlK2XK57VSRJn6058kgHtVXQUzJIRkgLz70/V2AiYc9KPDcgRZWI+XK/wBaaA17CM+ezHOAOau3DKJLTn/ltnH/AAB6n0i/0mPwvIk0G+9lMgC7CXZyTtwccDp+VVriAebaE/e8wn/xx/8AGsqdV1HJNNWLlDkSd9yLUjmRfcUyEgEYP8NGpELIvOOKbByQfVa1IJGcedtHvVdnAJ+uaQv/AKRkcdaiZvn/AANIBJG+YjPU1TuJcdTinTSYbOe+azb2UjHJ61EnYpK5Fe3HXDVjX166RNGj4Ldx2p1/cEHr2rlfFV1PHoV7JAT5oiIUjtnjNctSdjeEdTkdc1GLUdWFoshe1t5PMlbPBI/w5roPA1q2oahLrFzwpP7sH+FR0/SvO7b93ZJAmd8xy59uwr1HSf8ARdHhto/vMMYFc9F31ZtUVtEbFxJJr2rLBGD5CED8BXVasE03QvITjcMcVV8IWCW0HmMMux5NV/G95uCwqee9dXwxcnuzHd2KHhiPztQaTGfmrd11CGUmqXg63IcNjvWn4jGFyetZzhei0VGX7xMwieaKjZjmivDPUubWjgHU7bP/AD0Fd/qv/ILT6UUV7OWfC/U4MbuiGxAbS3B9DVHWz/ogbvgUUV6a+I4ehXlYm33d8VyHjJFNu3GMr2oopdRdDzzWf9I8FSiTkwyr5ZHUfMK9isZJCluWkZj5K8k8niiioXxP0/zNF8K/rsdLp7Foxk54rRX+L8KKKBMW4+6arPyfwooqoksgm4Y/7lZ78zn6UUVRBja0cxt7CrPh5F+yE4/h/wAKKKOo+hqWSgM2OMA4q3KuJrQbmPzt1P8AsmiimLqUtXH76PrUsQxGn+7miijoHUpqT5n51G7HzQO3NFFICldEhiPeszUycL9aKKznsaROa1J2MzDPSub8TSumiXTKeWG0/QmiiuCodMDz3SFEmp2yPyu4V6royB7hC3O3GKKKjDfCXW3PQtNAEHHauP8AEDNJrOHJIzRRXZW+FHPDc6rwwihBgdxUviYDFFFE/wCGC+JHKsTnrRRRXzp7J//Z" alt="Christian Jordan Keminsi" class="header-photo">
     </header>
 
-    <!-- Profil Professionnel -->
+    <!-- 2. RÉSUMÉ PROFESSIONNEL & POSITIONNEMENT STRATÉGIQUE -->
     <section>
       <div class="summary-box">
-        <strong>Ingénieur Logiciel Full-Stack & Architecte Système</strong> fort de plus de 4 ans d’expérience dans la conception de plateformes web scalables, d’API RESTful haute performance et d’architectures résilientes. Titulaire d’un <strong>Master en Génie Logiciel</strong> complété par un bagage scientifique initial en <strong>Microbiologie</strong>, je combine rigueur analytique et ingénierie informatique pour bâtir des systèmes métier critiques (HealthTech, FinTech, EdTech) du cadrage architectural au déploiement en production.
+        <strong>Ingénieur Logiciel & Architecte Système</strong> spécialisé dans la conception d'API RESTful haute performance et d'architectures web scalables. Diplômé d'un <strong>Master en Génie Logiciel</strong> et d'une <strong>Licence en Microbiologie</strong>, je mobilise cette double compétence pour concevoir des produits à haute exigence métier et des systèmes d'aide à la décision clinique (HealthTech, FinTech, EdTech) du design architectural à la production.
       </div>
     </section>
 
-    <!-- Compétences Techniques Scindées -->
+    <!-- 3. PROJET PHARE ISOLÉ : PREUVE DIFFÉRENCIANTE IMMÉDIATE -->
     <section>
-      <h2 class="section-title"><span class="badge-num">01</span> Compétences Techniques & Écosystème</h2>
+      <div class="spotlight-box">
+        <div class="spotlight-header">
+          <span class="spotlight-title">🧬 Projet Phare : AI Bacterial Resistance Prediction (RAM)</span>
+          <span class="spotlight-pill">IA Médicale & BioTech</span>
+        </div>
+        <div class="spotlight-metric">Inférence < 120ms · Validation Normes EUCAST <span class="source-tag">(sourcé : tests de charge locaux FastAPI sur batchs cliniques)</span></div>
+        <div class="spotlight-desc">
+          <strong>Synergie directe Microbiologie + Génie Logiciel :</strong> Plateforme d'IA clinique prédisant l'antibiorésistance à partir de mutations génomiques et profils CMI via des modèles supervisés (Random Forest, SVM, XGBoost), avec visualisation interactive d'antibiogrammes et confrontation instantanée aux seuils européens officiels EUCAST.
+        </div>
+        <div class="project-tech"><strong>Stack :</strong> Python, FastAPI, Scikit-learn, XGBoost, Angular, Docker Compose · <a href="https://github.com/jkeminsi/bacterial-resistance-ai" target="_blank" style="color: var(--accent); text-decoration: none; font-weight: 600;">Code GitHub ↗</a></div>
+      </div>
+    </section>
+
+    <!-- 4. EXPÉRIENCE PROFESSIONNELLE (FORMAT CLIENT / MISSION) -->
+    <section>
+      <h2 class="section-title"><span class="badge-num">01</span> Missions Récentes & Expérience Client</h2>
+
+      <!-- Client 1: Jetcamer -->
+      <div class="exp-item">
+        <div class="exp-header">
+          <div>
+            <span class="exp-client">Client : Jetcamer</span>
+            <span class="exp-role"> — Full-Stack & API Engineer</span>
+            <span class="exp-mission-type">(Mission continue à distance · Californie, USA)</span>
+          </div>
+          <span class="exp-dates">03/2022 — Présent</span>
+        </div>
+        <ul class="exp-bullets">
+          <li>Développement full-stack de plateformes web métier (Frontend Angular/Next.js & Backend FastAPI / Node.js).</li>
+          <li><strong>Optimisation des temps de réponse d'API :</strong> Réduction de <span class="metric-badge">-35% de latence</span> <span class="source-tag">(sourcé : benchmarking k6/Postman & indexation SQL/NoSQL)</span>.</li>
+          <li>Architecture et intégration de la suite financière <strong>MesDoh</strong> (encaissement POS, transactions ACID, moteur de facturation PDF).</li>
+          <li>Collaboration avec les équipes DevOps pour le monitoring, la robustesse et les déploiements CI/CD automatisés.</li>
+        </ul>
+      </div>
+
+      <!-- Client 2: Groupe LEGRANDSOFT -->
+      <div class="exp-item">
+        <div class="exp-header">
+          <div>
+            <span class="exp-client">Client : Groupe LEGRANDSOFT</span>
+            <span class="exp-role"> — Backend & Systems Developer</span>
+            <span class="exp-mission-type">(Mission freelance / Temps partagé · Québec, Canada)</span>
+          </div>
+          <span class="exp-dates">06/2019 — Présent</span>
+        </div>
+        <ul class="exp-bullets">
+          <li>Conception et maintenance d'architectures d'API RESTful robustes pour des services distribués et partenaires tiers.</li>
+          <li>Sécurisation, modélisation et optimisation de bases de données relationnelles (MySQL/PostgreSQL) et NoSQL.</li>
+          <li>Intégration de bus de messaging asynchrones pour le découplage des services à fort volume de requêtes.</li>
+          <li>Mise en place de tests automatisés (unitaires et intégration) renforçant la fiabilité en production.</li>
+        </ul>
+      </div>
+
+      <!-- Client 3: CITIS POWERBACHE -->
+      <div class="exp-item">
+        <div class="exp-header">
+          <div>
+            <span class="exp-client">Client : CITIS POWERBACHE</span>
+            <span class="exp-role"> — Lead Web Architect & Formateur Consultant</span>
+            <span class="exp-mission-type">(Mission d'architecture & conseil · Yaoundé)</span>
+          </div>
+          <span class="exp-dates">05/2023 — Présent</span>
+        </div>
+        <ul class="exp-bullets">
+          <li>Direction technique et refonte des portails institutionnels <strong>CitisFormation</strong> et <strong>Royal High School Nyom</strong>.</li>
+          <li>Génération d'un gain de <span class="metric-badge">+35% de visibilité SEO</span> <span class="source-tag">(sourcé : Google Search Console, avant/après refonte)</span> via optimisation Core Web Vitals.</li>
+          <li>Animation de modules de formation avancés en génie logiciel, architecture d'applications et bases de données.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 5. STACK TECHNIQUE SCINDÉE EN 2 BLOCS APRÈS L'EXPÉRIENCE -->
+    <section>
+      <h2 class="section-title"><span class="badge-num">02</span> Stack Technique</h2>
       <div class="skills-section">
         
-        <!-- Stack Principale -->
+        <!-- Stack Principale (Maîtrise Confirmée) -->
         <div class="skill-tier">
           <div class="skill-tier-header">
             <span>⚡ Stack Principale (Maîtrise Confirmée & Usage Quotidien)</span>
-            <span class="font-mono text-[7.2pt] text-blue-600">Core Production Stack</span>
+            <span class="font-mono text-[7pt] text-blue-600">Core Expertise</span>
           </div>
           <div class="skill-tier-content">
-            <strong>Backend & Systèmes :</strong> Python (FastAPI), Node.js, Architecture Microservices, API RESTful asynchrones, WebSockets.<br>
-            <strong>Frontend & Interface :</strong> TypeScript, Next.js (App Router), Angular, React, Tailwind CSS, Architecture Modulaire, WCAG AA.<br>
-            <strong>Bases de Données & ACID :</strong> PostgreSQL (Transactions ACID), MySQL, Modélisation relationnelle & indexation avancée.
+            <strong>Backend :</strong> Python (FastAPI), Node.js, Architecture Microservices, API RESTful asynchrones.<br>
+            <strong>Frontend :</strong> TypeScript, Next.js (App Router), Angular, React, Tailwind CSS, Architecture Modulaire.<br>
+            <strong>Données & Systèmes :</strong> PostgreSQL (Transactions ACID), MySQL, Modélisation & Indexation avancée.
           </div>
         </div>
 
@@ -654,85 +718,20 @@
         <div class="skill-tier">
           <div class="skill-tier-header">
             <span>🛠️ Technologies Complémentaires & Pratiques Ponctuelles</span>
-            <span class="font-mono text-[7.2pt] text-slate-500">Domain & Tools</span>
+            <span class="font-mono text-[7pt] text-slate-500">Complementary</span>
           </div>
           <div class="skill-tier-content">
-            <strong>Frameworks & DB Complémentaires :</strong> PHP (Symfony), MongoDB (NoSQL), SQLite (Offline-First), Redis (Cache), PostGIS.<br>
-            <strong>DevOps, Infrastructure & Sécurité :</strong> Docker, Nginx, CI/CD GitHub Actions, Linux, Sécurité OWASP, RBAC, Core Web Vitals.<br>
-            <strong>IA Appliquée & Data Science :</strong> Scikit-learn, XGBoost, Pipelines d’inférence ML, Normalisation génomique & Normes EUCAST.
+            <strong>Frameworks & DB :</strong> PHP (Symfony), MongoDB (NoSQL), SQLite (Offline-First), Redis (Cache), PostGIS.<br>
+            <strong>DevOps, Sécurité & IA :</strong> Docker, Nginx, CI/CD GitHub Actions, Linux, Sécurité OWASP, RBAC, Scikit-learn, XGBoost.
           </div>
         </div>
 
-      </div>
-    </section>
-
-    <!-- Expériences Professionnelles (Page 1) -->
-    <section>
-      <h2 class="section-title"><span class="badge-num">02</span> Expériences Professionnelles</h2>
-
-      <!-- Statut Explicite -->
-      <div class="status-banner">
-        <span>💼</span>
-        <span><strong>Statut professionnel :</strong> Consultant & Ingénieur Full-Stack Indépendant — Missions & contrats en parallèle pour plusieurs clients (USA, Canada, Cameroun).</span>
-      </div>
-
-      <!-- Jetcamer -->
-      <div class="exp-item">
-        <div class="exp-header">
-          <div>
-            <span class="exp-role">Full-Stack Software Engineer</span>
-            <span class="exp-company"> · Jetcamer</span>
-            <span class="exp-engagement">(Contrat Remote / Long terme · Californie, USA)</span>
-          </div>
-          <span class="exp-dates">03/2022 — Présent</span>
-        </div>
-        <ul class="exp-bullets">
-          <li>Conception et développement d'applications web complètes (Frontend Angular/Next.js + Backend FastAPI & Node.js).</li>
-          <li><strong>Optimisation des temps de réponse d'API :</strong> Réduction de <span class="metric-badge">-35% de latence</span> <span class="source-tag">(sourcé : benchmarking k6/Postman & profiling d'endpoints SQL/NoSQL)</span>.</li>
-          <li>Intégration et sécurisation de la plateforme de gestion et facturation <strong>MesDoh</strong> (encaissement POS, écritures comptables ACID).</li>
-          <li>Collaboration active avec les équipes DevOps pour l'automatisation des pipelines CI/CD et la haute disponibilité.</li>
-        </ul>
-      </div>
-
-      <!-- Groupe Legrandsoft -->
-      <div class="exp-item">
-        <div class="exp-header">
-          <div>
-            <span class="exp-role">Backend & Systems Developer</span>
-            <span class="exp-company"> · Groupe LEGRANDSOFT</span>
-            <span class="exp-engagement">(Mission Freelance / Temps Partagé · Québec, Canada)</span>
-          </div>
-          <span class="exp-dates">06/2019 — Présent</span>
-        </div>
-        <ul class="exp-bullets">
-          <li>Implémentation et maintenance d’architectures d’API RESTful robustes pour des services internes et partenaires tiers.</li>
-          <li>Sécurisation, modélisation et optimisation de bases de données relationnelles (MySQL/PostgreSQL) et NoSQL à fort volume.</li>
-          <li>Intégration de bus de messaging et files d'attente pour le découplage asynchrone des services backend.</li>
-          <li>Mise en place de suites de tests automatisés (unitaires et intégration) renforçant la stabilité du code en production.</li>
-        </ul>
-      </div>
-
-      <!-- CITIS Formation -->
-      <div class="exp-item">
-        <div class="exp-header">
-          <div>
-            <span class="exp-role">Lead Web Architect & Formateur Consultant</span>
-            <span class="exp-company"> · CITIS POWERBACHE</span>
-            <span class="exp-engagement">(Mission & Conseil · Yaoundé)</span>
-          </div>
-          <span class="exp-dates">05/2023 — Présent</span>
-        </div>
-        <ul class="exp-bullets">
-          <li>Direction architecturale et refonte des plateformes web institutionnelles <strong>CitisFormation</strong> et <strong>Royal High School Nyom</strong>.</li>
-          <li>Gain de <span class="metric-badge">+35% de visibilité SEO</span> <span class="source-tag">(sourcé : Google Search Console, avant/après refonte)</span> via optimisation Core Web Vitals.</li>
-          <li>Conception et animation de modules pédagogiques en programmation web, architecture logicielle et bases de données.</li>
-        </ul>
       </div>
     </section>
 
     <!-- Footer Page 1 -->
     <div class="page-footer">
-      <span>Christian Jordan KEMINSI — Full-Stack & Systems Architect</span>
+      <span>Christian Jordan KEMINSI — Full-Stack Engineer & Systems Architect</span>
       <span>Page 1 / 2</span>
     </div>
 
@@ -741,85 +740,70 @@
   <!-- ════════════════ PAGE 2 ════════════════ -->
   <div class="page-container page-break">
 
-    <!-- Réalisations & Systèmes Majeurs -->
+    <!-- 6. RÉALISATIONS MAJEURES EN PRODUCTION -->
     <section>
-      <h2 class="section-title"><span class="badge-num">03</span> Réalisations Majeures & Systèmes en Production</h2>
-      
-      <!-- ENCART SPÉCIAL SIGNATURE IA / BIOTECH (DIFFÉRENCIANT) -->
-      <div class="spotlight-box">
-        <div class="spotlight-header">
-          <span class="spotlight-title">🧬 Projet Signature : AI Bacterial Resistance Prediction (RAM)</span>
-          <span class="spotlight-pill">IA Médicale & BioTech</span>
-        </div>
-        <div class="spotlight-metric">Inférence < 120ms · Validation Normes EUCAST <span class="source-tag">(sourcé : tests de charge locaux FastAPI sur batchs cliniques)</span></div>
-        <div class="spotlight-desc">
-          <strong>Synergie directe Microbiologie + Génie Logiciel :</strong> Plateforme d'intelligence clinique prédisant les profils d'antibiorésistance par modèles de Machine Learning (Random Forest, SVM, XGBoost) entraînés sur mutations génomiques et données CMI, avec simulateur d'antibiogramme et confrontation automatique aux seuils officiels EUCAST.
-        </div>
-        <div class="project-tech" style="margin-top: 4px;"><strong>Stack :</strong> Python, FastAPI, Scikit-learn, XGBoost, Angular, Docker Compose</div>
-      </div>
-
-      <!-- Grille des autres projets -->
+      <h2 class="section-title"><span class="badge-num">03</span> Autres Réalisations Majeures Déployées</h2>
       <div class="projects-grid">
 
-        <!-- Projet 2: AFOS Sports Ecosystem -->
+        <!-- Projet: AFOS Sports -->
         <div class="project-card">
           <div class="project-card-header">
             <span class="project-card-title">AFOS Sports Ecosystem</span>
             <span class="project-card-tag">Système Distribué</span>
           </div>
           <div class="project-card-metric">0% perte de données · Sync Offline-First</div>
-          <div class="project-card-desc">Écosystème télémétrique pour staff sportif capturant les données GPS et évaluations sans réseau via SQLite local, avec réconciliation différentielle automatique vers le cloud.</div>
+          <div class="project-card-desc">Système télémétrique pour staff sportif capturant les données terrain sans réseau via SQLite local, avec synchronisation différentielle automatique vers le cloud.</div>
           <div class="project-tech">Stack : Angular, Ionic, SQLite, Node.js/FastAPI, Kafka</div>
         </div>
 
-        <!-- Projet 3: MesDoh FinTech -->
+        <!-- Projet: MesDoh FinTech -->
         <div class="project-card">
           <div class="project-card-header">
             <span class="project-card-title">MesDoh FinTech & POS Suite</span>
             <span class="project-card-tag">FinTech & Business</span>
           </div>
           <div class="project-card-metric">-35% Latence API · Transactions ACID <span class="source-tag">(k6)</span></div>
-          <div class="project-card-desc">Suite financière unifiée combinant terminal de caisse POS tactile, grand livre comptable en partie double, suivi des stocks multi-magasins et génération dynamique de factures PDF.</div>
+          <div class="project-card-desc">Plateforme financière unifiée combinant caisse POS tactile, grand livre comptable en partie double, suivi de stock multi-magasins et factures PDF automatiques.</div>
           <div class="project-tech">Stack : FastAPI, Angular, PostgreSQL ACID, Redis, Docker</div>
         </div>
 
-        <!-- Projet 4: ONG FACHAWO -->
+        <!-- Projet: ONG FACHAWO -->
         <div class="project-card">
           <div class="project-card-header">
             <span class="project-card-title">Refonte ONG FACHAWO (fachawo.com)</span>
             <span class="project-card-tag">Production Live</span>
           </div>
           <div class="project-card-metric">4,2s → 1,6s chargement · +40% Trafic <span class="source-tag">(GSC/Lighthouse)</span></div>
-          <div class="project-card-desc">Refonte complète du portail institutionnel : modernisation UI/UX, optimisation drastique des Core Web Vitals, sécurisation et stratégie SEO technique en 4 mois.</div>
+          <div class="project-card-desc">Refonte complète du portail de l'ONG : modernisation UI/UX, optimisation des Core Web Vitals, sécurisation et stratégie SEO en 4 mois.</div>
           <div class="project-tech">Stack : HTML5, Tailwind CSS, Modern Web Architecture</div>
         </div>
 
-        <!-- Projet 5: CitisFormation & Royal School -->
+        <!-- Projet: CitisFormation & Royal School -->
         <div class="project-card">
           <div class="project-card-header">
-            <span class="project-card-title">CitisFormation & Royal High School</span>
+            <span class="project-card-title">CitisFormation & Royal School</span>
             <span class="project-card-tag">Clients En Ligne</span>
           </div>
           <div class="project-card-metric">+35% Visibilité SEO · Bilingue FR/EN <span class="source-tag">(GSC)</span></div>
-          <div class="project-card-desc">Déploiement en production des portails d'admission et catalogues de formation pour CitisFormation (citisformation.com) et Royal High School Nyom (royalschoolnyom.com).</div>
+          <div class="project-card-desc">Déploiement en production des portails d'admission et catalogues pour CitisFormation (citisformation.com) et Royal High School (royalschoolnyom.com).</div>
           <div class="project-tech">Stack : Next.js, Symfony, Tailwind CSS, SEO Optimization</div>
         </div>
 
-        <!-- Projet 6: SIGEPO & BioClin -->
+        <!-- Projet: SIGEPO & BioClin -->
         <div class="project-card" style="grid-column: span 2;">
           <div class="project-card-header">
             <span class="project-card-title">Systèmes de Gestion Métier : SIGEPO & BioClin/GestPlus</span>
             <span class="project-card-tag">Systèmes Métier</span>
           </div>
           <div class="project-card-metric">-60% d'erreurs manuelles · Rapports PDF Automatisés <span class="source-tag">(sourcé : audit opérationnel interne)</span></div>
-          <div class="project-card-desc">Plateformes de gestion académique (SIGEPO) et d'inventaire de laboratoire (BioClin/GestPlussn.com) : génération en masse de relevés PDF, calculs de pondérations et traçabilité RBAC complète.</div>
+          <div class="project-card-desc">Outils de gestion académique (SIGEPO) et d'inventaire de laboratoire (BioClin / gestplus-sn.com) : génération en masse de relevés PDF, calculs de pondérations et traçabilité des opérations.</div>
           <div class="project-tech">Stack : Symfony, MySQL, Angular, PDFMake, RBAC Security</div>
         </div>
 
       </div>
     </section>
 
-    <!-- Formation Académique -->
+    <!-- 7. FORMATION ACADÉMIQUE -->
     <section>
       <h2 class="section-title"><span class="badge-num">04</span> Formation Académique & Diplômes</h2>
       <div class="edu-grid">
@@ -827,55 +811,55 @@
           <div class="edu-degree">Master en Génie Logiciel</div>
           <div class="edu-school">IUSTY, Yaoundé</div>
           <div class="edu-dates">10/2023 — 07/2025</div>
-          <div style="color: #64748B; font-size: 7.2pt; margin-top: 2px;">Architecture logicielle, calcul distribué, IA et sécurité des SI.</div>
+          <div style="color: #64748B; font-size: 7.1pt; margin-top: 1px;">Architecture logicielle, systèmes distribués, IA & sécurité.</div>
         </div>
         <div class="edu-item">
           <div class="edu-degree">Formation Dév. Web & Mobile</div>
           <div class="edu-school">CITIS PowerBache Education</div>
           <div class="edu-dates">2018 — 2019</div>
-          <div style="color: #64748B; font-size: 7.2pt; margin-top: 2px;">Développement full-stack, architectures MVC, bases SQL.</div>
+          <div style="color: #64748B; font-size: 7.1pt; margin-top: 1px;">Développement full-stack, architectures MVC, bases SQL.</div>
         </div>
         <div class="edu-item">
           <div class="edu-degree">Licence en Microbiologie</div>
           <div class="edu-school">Université de Yaoundé 1</div>
           <div class="edu-dates">2016 — 2019 (3 ans)</div>
-          <div style="color: #64748B; font-size: 7.2pt; margin-top: 2px;">Génétique, données biologiques, méthodologie scientifique.</div>
+          <div style="color: #64748B; font-size: 7.1pt; margin-top: 1px;">Génétique, données biologiques, méthodologie scientifique.</div>
         </div>
       </div>
     </section>
 
-    <!-- Langues & Références -->
+    <!-- 8. LANGUES & RÉFÉRENCES PROFESSIONNELLES -->
     <section>
-      <div style="display: grid; grid-template-columns: 1fr 2.5fr; gap: 10px; margin-top: 2px;">
+      <div style="display: grid; grid-template-columns: 1fr 2.5fr; gap: 9px; margin-top: 2px;">
         
         <!-- Langues -->
         <div>
-          <h2 class="section-title" style="margin-top: 7px;"><span class="badge-num">05</span> Langues</h2>
-          <div style="font-size: 8.2pt; background: var(--bg-card); border: 1px solid var(--border); padding: 7px 9px; border-radius: 6px; line-height: 1.45;">
-            <div><strong>Français :</strong> Langue maternelle (C2)</div>
-            <div><strong>Anglais :</strong> Professionnel technique (B2)</div>
+          <h2 class="section-title" style="margin-top: 6px;"><span class="badge-num">05</span> Langues</h2>
+          <div style="font-size: 8pt; background: var(--bg-card); border: 1px solid var(--border); padding: 6px 8px; border-radius: 5px; line-height: 1.45;">
+            <div><strong>Français :</strong> Natif (C2)</div>
+            <div><strong>Anglais :</strong> Technique pro (B2)</div>
           </div>
         </div>
 
         <!-- Références -->
         <div>
-          <h2 class="section-title" style="margin-top: 7px;"><span class="badge-num">06</span> Références Professionnelles</h2>
+          <h2 class="section-title" style="margin-top: 6px;"><span class="badge-num">06</span> Références Professionnelles</h2>
           <div class="ref-grid">
             <div class="ref-card">
               <div class="ref-name">M. Narcisse NOUMEGNI</div>
-              <div class="ref-role">Lead Technique · Jetcamer (Californie, USA)</div>
+              <div class="ref-role">Lead Tech · Jetcamer (Californie)</div>
             </div>
             <div class="ref-card">
               <div class="ref-name">M. Legrand NITCHEU</div>
-              <div class="ref-role">Lead Technique · Legrandsoft (Québec, Canada)</div>
+              <div class="ref-role">Lead Tech · Legrandsoft (Québec)</div>
             </div>
             <div class="ref-card">
               <div class="ref-name">Mme Margret TCHIENGA</div>
-              <div class="ref-role">Directrice · CITIS PowerBache (Yaoundé)</div>
+              <div class="ref-role">Directrice · CITIS (Yaoundé)</div>
             </div>
           </div>
-          <div style="font-size: 7.2pt; color: #64748B; font-style: italic; margin-top: 3px;">
-            * Coordonnées complètes et lettres de recommandation disponibles sur demande.
+          <div style="font-size: 7.1pt; color: #64748B; font-style: italic; margin-top: 2px;">
+            * Coordonnées complètes et recommandations disponibles sur demande.
           </div>
         </div>
 
@@ -884,7 +868,7 @@
 
     <!-- Footer Page 2 -->
     <div class="page-footer">
-      <span>Christian Jordan KEMINSI — Full-Stack & Systems Architect</span>
+      <span>Christian Jordan KEMINSI — Full-Stack Engineer & Systems Architect</span>
       <span>Page 2 / 2 · Références et code source vérifiables sur christiankeminsi.dev</span>
     </div>
 
