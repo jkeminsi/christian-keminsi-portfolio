@@ -166,7 +166,7 @@
 
     .summary {
       font-size: 8.5pt;
-      line-height: 1.36;
+      line-height: 1.38;
       color: #1E293B;
     }
 
@@ -187,7 +187,7 @@
     .spotlight-metric {
       font-family: 'JetBrains Mono', monospace;
       font-weight: 700;
-      color: #059669;
+      color: #047857;
       font-size: 7.4pt;
       margin: 1px 0;
     }
@@ -291,17 +291,17 @@
   <!-- Action Bar -->
   <div class="action-bar">
     <div class="action-bar-title">
-      <span>📋 CV Plateformes / ATS (Format 1 Colonne Strict) — Christian Jordan KEMINSI</span>
+      <span>CV Plateformes / ATS (Format 1 Colonne Strict) — Christian Jordan KEMINSI</span>
     </div>
     <div class="action-buttons">
       <a href="cv.html" class="btn-switch">
-        📄 Voir Version Réseau (2 Colonnes)
+        Voir Version Réseau (2 Colonnes)
       </a>
       <a href="https://jkeminsi.github.io/christian-keminsi-portfolio/" target="_blank" class="btn-switch">
-        🌐 Portfolio
+        Portfolio
       </a>
       <button class="btn-print" onclick="window.print()">
-        🖨️ Imprimer / PDF
+        Imprimer / PDF
       </button>
     </div>
   </div>
@@ -323,11 +323,11 @@
       </div>
     </header>
 
-    <!-- 2. RÉSUMÉ PROFESSIONNEL -->
+    <!-- 2. RÉSUMÉ PROFESSIONNEL AVEC VRAI POURQUOI -->
     <section>
       <h2>Résumé Professionnel</h2>
       <p class="summary">
-        Ingénieur Logiciel & Architecte Système spécialisé dans la conception d'API RESTful haute performance et d'architectures web scalables. Diplômé d'un Master en Génie Logiciel complété par une Licence en Microbiologie, je mobilise cette double compétence pour concevoir des systèmes métier critiques et des outils d'aide à la décision clinique (HealthTech, FinTech, EdTech) du design architectural au déploiement en production.
+        Mon parcours a débuté en microbiologie, guidé par la rigueur scientifique et l'analyse de données biologiques complexes. C'est en constatant le besoin critique d'outils automatisés et fiables face à l'incertitude que j'ai fait le choix d'embrasser le génie logiciel. Aujourd'hui, je conçois des architectures backend robustes, des API haute performance et des systèmes résilients (HealthTech, FinTech, EdTech) pensés pour durer en production.
       </p>
     </section>
 
@@ -337,7 +337,7 @@
       <div class="spotlight">
         <div class="spotlight-title">AI Bacterial Resistance Prediction (RAM) — Intelligence Clinique</div>
         <div class="spotlight-metric">Métrique clé : Inférence < 120ms · Validation Normes EUCAST (tests de charge locaux FastAPI)</div>
-        <p><strong>Synergie directe Microbiologie + Génie Logiciel :</strong> Système d'aide à la décision clinique prédisant l'antibiorésistance par modèles de Machine Learning (Random Forest, SVM, XGBoost) entraînés sur profils génomiques et données CMI, avec cartographie d'antibiogrammes et confrontation aux seuils officiels européens EUCAST.</p>
+        <p>Conçu à la croisée de ma formation en microbiologie et en génie logiciel : système d'aide à la décision clinique prédisant l'antibiorésistance à partir de profils génomiques et données CMI via des modèles supervisés (Random Forest, SVM, XGBoost), avec cartographie d'antibiogrammes et confrontation aux seuils officiels européens EUCAST.</p>
         <p style="font-family: 'JetBrains Mono', monospace; font-size: 7.3pt; color: #475569; margin-top: 2px;">Stack technique : Python, FastAPI, Scikit-learn, XGBoost, Angular, Docker Compose · Code source vérifiable sur GitHub.</p>
       </div>
     </section>
@@ -353,10 +353,9 @@
         </div>
         <div class="exp-sub">Mission continue à distance · Californie, USA</div>
         <ul>
-          <li>Architecture et développement de la suite financière <strong>MesDoh</strong> (caisse POS tactile, facturation automatisée, intégrité transactionnelle ACID).</li>
-          <li><strong>Optimisation de la latence d'API :</strong> Réduction de <strong>-35% du temps de réponse</strong> (sourcé : benchmarking k6/Postman, profilage d'endpoints et indexation PostgreSQL).</li>
-          <li>Conception des modules d'inventaire multi-magasins et moteur serveur de génération dynamique de factures PDF certifiées.</li>
-          <li>Collaboration avec les équipes DevOps pour l'automatisation CI/CD et la haute disponibilité.</li>
+          <li>Face aux ralentissements du terminal de caisse en heure de pointe, j'ai profilé les requêtes lentes et ré-indexé PostgreSQL, réduisant le temps de réponse API de <strong>35%</strong> (sourcé : benchmarking k6 / Postman).</li>
+          <li>Conception de l'architecture transactionnelle de la suite <strong>MesDoh</strong> : intégrité ACID, déduction de stock multi-magasins en temps réel et moteur serveur d'édition PDF certifiés.</li>
+          <li>Automatisation des pipelines de build et de déploiement continu en étroite collaboration avec l'équipe DevOps.</li>
         </ul>
       </div>
 
@@ -367,10 +366,8 @@
         </div>
         <div class="exp-sub">Mission freelance / Temps partagé · Québec, Canada</div>
         <ul>
-          <li>Conception et maintenance d'architectures d'API RESTful robustes pour des services distribués et partenaires tiers.</li>
-          <li>Sécurisation, modélisation et optimisation de bases de données relationnelles (MySQL/PostgreSQL) et NoSQL.</li>
-          <li>Intégration de bus de messaging asynchrones pour le découplage des services backend à fort volume.</li>
-          <li>Mise en place de suites de tests automatisés (unitaires et intégration) renforçant la fiabilité en production.</li>
+          <li>Conception d'architectures d'API RESTful pour des services distribués, avec découplage asynchrone par files de messages pour absorber les pics de charge.</li>
+          <li>Modélisation et sécurisation des bases relationnelles (MySQL/PostgreSQL) et NoSQL, complétées par des suites de tests automatisés pour fiabiliser les mises en production.</li>
         </ul>
       </div>
 
@@ -381,10 +378,9 @@
         </div>
         <div class="exp-sub">Mission d'architecture & conseil · Yaoundé</div>
         <ul>
-          <li>Direction technique de la refonte du portail académique <strong>CitisFormation</strong> (catalogue dynamique bilingue & flux d'admissions).</li>
-          <li>Génération d'un gain de <strong>+35% de visibilité organique SEO</strong> (sourcé : Google Search Console, optimisation Core Web Vitals).</li>
-          <li>Supervision technique du portail bilingue de la <strong>Royal High School Nyom</strong>.</li>
-          <li>Animation de modules de formation avancés en génie logiciel, architecture d'applications et bases de données.</li>
+          <li>Refonte architecturale complète du portail académique <strong>CitisFormation</strong> pour fluidifier le parcours d'admission et diviser les temps de chargement, entraînant un gain de <strong>+35% de visibilité organique</strong> (sourcé : Google Search Console).</li>
+          <li>Supervision technique du portail bilingue officiel de la <strong>Royal High School Nyom</strong>.</li>
+          <li>Conception et animation de modules pratiques en architecture logicielle et programmation, axés sur les bonnes pratiques de production.</li>
         </ul>
       </div>
     </section>
@@ -406,7 +402,7 @@
       <ul>
         <li><strong>AFOS Sports Ecosystem :</strong> Architecture distribuée offline-first capturant la télémétrie sportive sans réseau via SQLite local, avec réconciliation cloud (<strong>0% perte de données</strong> — sourcé : tests de résilience réseau). Stack : Angular, Ionic, SQLite, Node.js.</li>
         <li><strong>Refonte ONG FACHAWO (fachawo.com) :</strong> Modernisation UI/UX, temps de chargement réduit de 4,2s à 1,6s et <strong>+40% de trafic organique</strong> (sourcé : Google Search Console / Lighthouse en 4 mois). Stack : HTML5, Tailwind CSS.</li>
-        <li><strong>BioClin & GestPlus (gestplus-sn.com) :</strong> Plateforme de gestion de stocks de réactifs de laboratoire et services B2B, réduisant de <strong>-60% les erreurs manuelles</strong> (sourcé : audit opérationnel interne & flux PDF). Stack : Angular, Node.js, MySQL.</li>
+        <li><strong>BioClin & GestPlus (gestplus-sn.com) :</strong> Plateforme de gestion de stocks de réactifs de laboratoire et services B2B, réduisant de <strong>-60% les erreurs manuelles</strong> grâce à l'automatisation des flux PDF (sourcé : audit opérationnel interne). Stack : Angular, Node.js, MySQL.</li>
         <li><strong>Plateforme Académique SIGEPO :</strong> Gestion des examens et délibérations avec génération en masse de relevés certifiés et traçabilité RBAC (sourcé : contrôle académique semestriel). Stack : Symfony, MySQL, PDFMake.</li>
       </ul>
     </section>
@@ -438,6 +434,7 @@
       <h2>Langues & Références Professionnelles</h2>
       <p style="font-size: 8pt;">
         <strong>Langues :</strong> Français (Langue maternelle / C2), Anglais (Professionnel technique / B2).<br>
+        <strong>Centres d'intérêt :</strong> Bioinformatique & vulgarisation, mentorat de développeurs, Clean Architecture.<br>
         <strong>Références vérifiables :</strong> M. Narcisse NOUMEGNI (Lead Tech, Jetcamer Californie), M. Legrand NITCHEU (Lead Tech, Legrandsoft Québec), Mme Margret TCHIENGA (Directrice, CITIS Yaoundé). <em>Coordonnées complètes et lettres de recommandation disponibles sur demande.</em>
       </p>
     </section>
