@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { useLanguage } from '@/context/LanguageContext';
 import { getPortfolioData } from '@/data/portfolioData';
 import { ArrowRight, Github, Sparkles, CheckCircle2 } from 'lucide-react';
+import { getAssetUrl } from '@/lib/utils';
 
 export const Hero: React.FC = () => {
   const { language } = useLanguage();
@@ -23,26 +24,40 @@ export const Hero: React.FC = () => {
           {/* Left Hero Column */}
           <div className="lg:col-span-7 space-y-7 text-left">
             
-            {/* Status & Availability Tag */}
-            <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-[#171717] border border-[#262626] shadow-inner">
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
-              </span>
-              <span className="text-xs font-mono text-[#F5F5F5] font-medium tracking-tight">
-                {personalInfo.status.text}
-              </span>
-              <span className="text-[#3B3B3B] text-xs">|</span>
-              <span className="text-[11px] font-mono text-[#A3A3A3] hidden sm:inline">
-                {personalInfo.status.subtext}
-              </span>
+            {/* Professional Portrait & Availability Tag */}
+            <div className="flex items-center gap-4 sm:gap-5">
+              <div className="relative w-16 h-16 sm:w-20 sm:h-20 rounded-2xl overflow-hidden border border-[#2E2E2E] bg-[#141414] shadow-xl shrink-0 group">
+                <img
+                  src={getAssetUrl('/christian-keminsi.jpg')}
+                  alt={personalInfo.name}
+                  className="w-full h-full object-cover object-top transition-all duration-300 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 ring-1 ring-inset ring-white/10 rounded-2xl pointer-events-none" />
+              </div>
+
+              <div className="space-y-2">
+                <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-[#171717] border border-[#262626] shadow-inner">
+                  <span className="relative flex h-2 w-2">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                  </span>
+                  <span className="text-xs font-mono text-[#F5F5F5] font-medium tracking-tight">
+                    {personalInfo.status.text}
+                  </span>
+                  <span className="text-[#3B3B3B] text-xs">|</span>
+                  <span className="text-[11px] font-mono text-[#A3A3A3] hidden sm:inline">
+                    {personalInfo.status.subtext}
+                  </span>
+                </div>
+
+                <p className="text-sm sm:text-base font-mono text-[#3B82F6] font-medium tracking-wide">
+                  {personalInfo.heroHeadline.greeting}
+                </p>
+              </div>
             </div>
 
             {/* Main Headline */}
             <div className="space-y-4">
-              <p className="text-sm sm:text-base font-mono text-[#3B82F6] font-medium tracking-wide">
-                {personalInfo.heroHeadline.greeting}
-              </p>
               <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-[#F5F5F5] leading-[1.14]">
                 {personalInfo.heroHeadline.part1} <br className="hidden sm:inline" />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F5F5F5] via-[#E2E8F0] to-[#94A3B8]">
