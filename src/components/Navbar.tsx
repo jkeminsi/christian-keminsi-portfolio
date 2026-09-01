@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
+import Link from 'next/link';
 import { useLanguage } from '@/context/LanguageContext';
 import { getPortfolioData } from '@/data/portfolioData';
 import { Menu, X, Search, Github, Linkedin, Globe } from 'lucide-react';
@@ -59,8 +60,8 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenCommandPalette }) => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         {/* Brand */}
-        <a
-          href="#"
+        <Link
+          href="/"
           className="group flex items-center gap-2.5 text-sm font-semibold tracking-wider text-[#F5F5F5] hover:text-[#3B82F6] transition-colors"
         >
           <div className="w-8 h-8 rounded-lg bg-[#171717] border border-[#262626] flex items-center justify-center group-hover:border-[#3B82F6]/50 group-hover:shadow-[0_0_12px_rgba(59,130,246,0.3)] transition-all">
@@ -74,14 +75,14 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenCommandPalette }) => {
               Full-Stack & Systems
             </span>
           </div>
-        </a>
+        </Link>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-1 bg-[#111111]/90 border border-[#262626] px-3 py-1.5 rounded-full backdrop-blur-md">
           {navLinks.map((link) => {
             const isActive = activeSection === link.id;
             return (
-              <a
+              <Link
                 key={link.id}
                 href={link.href}
                 className={`px-3 py-1 text-xs font-mono transition-all rounded-full ${
@@ -91,7 +92,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenCommandPalette }) => {
                 }`}
               >
                 {link.name}
-              </a>
+              </Link>
             );
           })}
         </nav>
@@ -208,14 +209,14 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenCommandPalette }) => {
 
           <div className="grid grid-cols-2 gap-2 pt-1">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.id}
                 href={link.href}
                 onClick={() => setMobileMenuOpen(false)}
                 className="px-3 py-2 text-xs font-mono text-[#A3A3A3] hover:text-[#F5F5F5] hover:bg-[#171717] rounded-md border border-transparent hover:border-[#262626] transition-all"
               >
                 {link.name}
-              </a>
+              </Link>
             ))}
           </div>
 

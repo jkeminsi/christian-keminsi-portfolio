@@ -24,7 +24,7 @@ export interface Project {
   keyTech: string;
   screenshotUrl?: string;
   screenshotAlt: string;
-  screenshotPlaceholder: string;
+  screenshotPlaceholder?: string;
   metricLine: string;
   isSignature?: boolean;
   isLiveProduction?: boolean;

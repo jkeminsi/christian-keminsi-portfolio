@@ -5,6 +5,7 @@ import { useLanguage } from '@/context/LanguageContext';
 import { getPortfolioData } from '@/data/portfolioData';
 import { Search, CornerDownLeft } from 'lucide-react';
 import { Project } from '@/types';
+import { getAssetUrl } from '@/lib/utils';
 
 interface CommandPaletteProps {
   isOpen: boolean;
@@ -65,10 +66,11 @@ export const CommandPalette: React.FC<CommandPaletteProps> = ({
       subtitle: language === 'fr' ? 'Voir la sélection des 4 projets phares' : 'View the 4 selected flagship projects',
       action: () => {
         onClose();
-        if (window.location.pathname !== '/') {
-          window.location.href = '/#projects';
+        const projectsEl = document.getElementById('projects');
+        if (projectsEl) {
+          projectsEl.scrollIntoView({ behavior: 'smooth' });
         } else {
-          document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
+          window.location.href = getAssetUrl('/#projects');
         }
       },
     },
@@ -79,7 +81,7 @@ export const CommandPalette: React.FC<CommandPaletteProps> = ({
       subtitle: language === 'fr' ? 'Consulter les 9 projets et études de cas' : 'Explore all 9 projects and case studies',
       action: () => {
         onClose();
-        window.location.href = '/projets';
+        window.location.href = getAssetUrl('/projets');
       },
     },
     {
@@ -89,10 +91,11 @@ export const CommandPalette: React.FC<CommandPaletteProps> = ({
       subtitle: language === 'fr' ? 'Product Engineering, Full-Stack Engineering, IA & Architecture' : 'Product Engineering, Full-Stack Engineering, AI & Architecture',
       action: () => {
         onClose();
-        if (window.location.pathname !== '/') {
-          window.location.href = '/#expertise';
+        const expEl = document.getElementById('expertise');
+        if (expEl) {
+          expEl.scrollIntoView({ behavior: 'smooth' });
         } else {
-          document.getElementById('expertise')?.scrollIntoView({ behavior: 'smooth' });
+          window.location.href = getAssetUrl('/#expertise');
         }
       },
     },
@@ -103,10 +106,11 @@ export const CommandPalette: React.FC<CommandPaletteProps> = ({
       subtitle: language === 'fr' ? 'Envoyer un message direct ou copier l\'e-mail' : 'Send an inquiry or copy direct email',
       action: () => {
         onClose();
-        if (window.location.pathname !== '/') {
-          window.location.href = '/#contact';
+        const contactEl = document.getElementById('contact');
+        if (contactEl) {
+          contactEl.scrollIntoView({ behavior: 'smooth' });
         } else {
-          document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+          window.location.href = getAssetUrl('/#contact');
         }
       },
     },

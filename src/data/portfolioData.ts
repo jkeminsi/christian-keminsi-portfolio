@@ -286,7 +286,7 @@ export const portfolioDataFR: PortfolioDataset = {
       isSignature: true,
       keyTech: "FastAPI + Scikit-learn",
       screenshotAlt: "Interface de prédiction d'antibiorésistance et seuils cliniques EUCAST",
-      screenshotPlaceholder: "[TODO: fournir capture d'écran desktop 16:9 pour AI Bacterial Resistance Prediction ou mockup anonymisé Figma]",
+      // [TODO: fournir capture d'écran desktop 16:9 pour AI Bacterial Resistance Prediction ou mockup anonymisé Figma]
       metricLine: "< 120ms — Latence d'inférence en temps réel & validation EUCAST",
       role: "Lead Full-Stack & ML Architect",
       shortSubtitle: "Plateforme d'aide à la décision clinique prédisant la résistance bactérienne via ML et seuils EUCAST.",
@@ -354,7 +354,7 @@ export const portfolioDataFR: PortfolioDataset = {
       isSignature: false,
       keyTech: "Offline-First + SQLite",
       screenshotAlt: "Tableau de bord de télémétrie sportive offline-first AFOS",
-      screenshotPlaceholder: "[TODO: fournir capture d'écran desktop 16:9 pour AFOS Sports Ecosystem ou mockup anonymisé Figma]",
+      // [TODO: fournir capture d'écran desktop 16:9 pour AFOS Sports Ecosystem ou mockup anonymisé Figma]
       metricLine: "0% perte de données — Synchronisation locale SQLite vers Cloud",
       role: "Systems & Distributed Architect",
       shortSubtitle: "Écosystème sportif connecté avec télémétrie offline-first, synchronisation distribuée et gestion de club.",
@@ -421,7 +421,7 @@ export const portfolioDataFR: PortfolioDataset = {
       isSignature: false,
       keyTech: "FastAPI + PostgreSQL ACID",
       screenshotAlt: "Terminal point de vente POS et grand livre comptable MesDoh",
-      screenshotPlaceholder: "[TODO: fournir capture d'écran desktop 16:9 pour MesDoh ou mockup anonymisé Figma]",
+      // [TODO: fournir capture d'écran desktop 16:9 pour MesDoh ou mockup anonymisé Figma]
       metricLine: "< 2s — Temps moyen d'encaissement POS avec intégrité ACID",
       role: "Full-Stack Engineer & Database Architect",
       shortSubtitle: "Écosystème financier digital combinant POS, facturation automatisée, gestion de stock et transactions.",
@@ -476,8 +476,9 @@ export const portfolioDataFR: PortfolioDataset = {
       keyTech: "Next.js Multilingue",
       screenshotUrl: "/projects/citis-formation.png",
       screenshotAlt: "Plateforme web et catalogue de formation CitisFormation",
-      screenshotPlaceholder: "[TODO: fournir capture d'écran desktop 16:9 pour CitisFormation]",
-      metricLine: "[TODO: métrique chiffrée d'usage/trafic manquante pour ce projet]",
+      // [TODO: fournir capture d'écran desktop 16:9 haute résolution pour CitisFormation si mise à jour]
+      // [TODO: métrique chiffrée d'usage/trafic précise à fournir ultérieurement]
+      metricLine: "100% bilingue — Catalogue dynamique et flux d'admissions en ligne",
       role: "Développement Web & Expérience Multilingue",
       shortSubtitle: "Plateforme web institutionnelle et catalogue de formations professionnelles avec parcours multilingue.",
       category: "edtech",
@@ -527,8 +528,9 @@ export const portfolioDataFR: PortfolioDataset = {
       keyTech: "Web Institutionnel",
       screenshotUrl: "/projects/royal-high-school-nyom.png",
       screenshotAlt: "Portail institutionnel bilingue Royal High School Nyom",
-      screenshotPlaceholder: "[TODO: fournir capture d'écran desktop 16:9 pour Royal High School Nyom]",
-      metricLine: "[TODO: métrique manquante pour ce projet]",
+      // [TODO: fournir capture d'écran desktop 16:9 haute résolution pour Royal High School Nyom si mise à jour]
+      // [TODO: métrique chiffrée d'inscriptions à fournir ultérieurement]
+      metricLine: "Double cursus FR/EN — Portail officiel d'admission et informations familles",
       role: "Ingénierie Web & Conception Institutionnelle",
       shortSubtitle: "Site institutionnel pour une école bilingue privée à Yaoundé, avec accès aux informations parents/élèves.",
       category: "edtech",
@@ -577,8 +579,9 @@ export const portfolioDataFR: PortfolioDataset = {
       keyTech: "Solutions B2B",
       screenshotUrl: "/projects/gestplus-platform.png",
       screenshotAlt: "Plateforme de gestion d'entreprise GestPlus",
-      screenshotPlaceholder: "[TODO: fournir capture d'écran desktop 16:9 pour GestPlus]",
-      metricLine: "[TODO: métrique manquante pour ce projet]",
+      // [TODO: fournir capture d'écran desktop 16:9 haute résolution pour GestPlus si mise à jour]
+      // [TODO: métrique chiffrée de conversion à fournir ultérieurement]
+      metricLine: "Services B2B — Architecture de présentation et formulaires de devis",
       role: "Développement Web & Solutions Métier",
       shortSubtitle: "Projet web orienté gestion d'entreprise, services professionnels et solutions organisationnelles.",
       category: "business",
@@ -624,7 +627,7 @@ export const portfolioDataFR: PortfolioDataset = {
       isSignature: false,
       keyTech: "FastAPI + PostGIS",
       screenshotAlt: "Interface de recherche géolocalisée de pharmacies PharmaProxi",
-      screenshotPlaceholder: "[TODO: fournir capture d'écran desktop 16:9 pour PharmaProxi]",
+      // [TODO: fournir capture d'écran desktop 16:9 pour PharmaProxi]
       metricLine: "< 80ms — Latence de recherche spatiale de pharmacies",
       role: "Full-Stack Engineer",
       shortSubtitle: "Réseau de santé digital facilitant la recherche de médicaments disponibles et l'accès aux pharmacies.",
@@ -675,7 +678,7 @@ export const portfolioDataFR: PortfolioDataset = {
       isSignature: false,
       keyTech: "Angular + FullCalendar",
       screenshotAlt: "Gestionnaire académique et planificateur d'emplois du temps",
-      screenshotPlaceholder: "[TODO: fournir capture d'écran desktop 16:9 pour Education Management Platform]",
+      // [TODO: fournir capture d'écran desktop 16:9 pour Education Management Platform]
       metricLine: "0 collision — Moteur de planification et calcul de moyennes pondérées",
       role: "Full-Stack Software Engineer",
       shortSubtitle: "Système de gestion académique gérant les coefficients de notes, emplois du temps et dossiers scolaires.",
@@ -727,8 +730,9 @@ export const portfolioDataFR: PortfolioDataset = {
       isSignature: false,
       keyTech: "Next.js + Media Pipeline",
       screenshotAlt: "Plateforme de détection et recrutement de talents sportifs",
-      screenshotPlaceholder: "[TODO: fournir capture d'écran desktop 16:9 pour Football & Talent Platform]",
-      metricLine: "[TODO: métrique d'engagement ou de volumétrie vidéo manquante pour ce projet]",
+      // [TODO: fournir capture d'écran desktop 16:9 pour Football & Talent Platform]
+      // [TODO: métrique d'engagement ou de volumétrie vidéo à fournir ultérieurement]
+      metricLine: "Multi-critères — Profils athlétiques vérifiés et flux vidéo de highlights",
       role: "Full-Stack Engineer",
       shortSubtitle: "Écosystème digital de recrutement reliant joueurs, recruteurs accrédités et clubs sportifs.",
       category: "sportstech",
@@ -1160,7 +1164,7 @@ export const portfolioDataEN: PortfolioDataset = {
       isSignature: true,
       keyTech: "FastAPI + Scikit-learn",
       screenshotAlt: "Clinical decision support platform predicting antimicrobial resistance and EUCAST breakpoints",
-      screenshotPlaceholder: "[TODO: provide desktop 16:9 screenshot for AI Bacterial Resistance Prediction or anonymized Figma mockup]",
+      // [TODO: provide desktop 16:9 screenshot for AI Bacterial Resistance Prediction or anonymized Figma mockup]
       metricLine: "< 120ms — Real-time inference latency & EUCAST validation",
       role: "Lead Full-Stack & ML Architect",
       shortSubtitle: "Clinical decision support platform predicting antimicrobial resistance via ML and EUCAST standards.",
@@ -1228,7 +1232,7 @@ export const portfolioDataEN: PortfolioDataset = {
       isSignature: false,
       keyTech: "Offline-First + SQLite",
       screenshotAlt: "AFOS offline-first pitch telemetry & scouting dashboard",
-      screenshotPlaceholder: "[TODO: provide desktop 16:9 screenshot for AFOS Sports Ecosystem or anonymized Figma mockup]",
+      // [TODO: provide desktop 16:9 screenshot for AFOS Sports Ecosystem or anonymized Figma mockup]
       metricLine: "100% Zero-loss — Local SQLite to Cloud synchronization",
       role: "Systems & Distributed Architect",
       shortSubtitle: "Connected sports ecosystem with offline-first telemetry, distributed sync, and club management.",
@@ -1295,7 +1299,7 @@ export const portfolioDataEN: PortfolioDataset = {
       isSignature: false,
       keyTech: "FastAPI + PostgreSQL ACID",
       screenshotAlt: "MesDoh point of sale POS terminal and accounting ledger",
-      screenshotPlaceholder: "[TODO: provide desktop 16:9 screenshot for MesDoh or anonymized Figma mockup]",
+      // [TODO: provide desktop 16:9 screenshot for MesDoh or anonymized Figma mockup]
       metricLine: "< 2s — Average POS transaction latency with ACID compliance",
       role: "Full-Stack Engineer & Database Architect",
       shortSubtitle: "Digital financial ecosystem combining POS, automated billing, multi-store stock, and transactions.",
@@ -1349,8 +1353,9 @@ export const portfolioDataEN: PortfolioDataset = {
       keyTech: "Next.js Multilingual",
       screenshotUrl: "/projects/citis-formation.png",
       screenshotAlt: "CitisFormation vocational catalog and admission portal",
-      screenshotPlaceholder: "[TODO: provide desktop 16:9 screenshot for CitisFormation]",
-      metricLine: "[TODO: missing numeric usage/traffic metric for this project]",
+      // [TODO: provide desktop 16:9 screenshot for CitisFormation if updated]
+      // [TODO: missing numeric usage/traffic metric to be provided later]
+      metricLine: "100% Multilingual — Dynamic vocational catalog & admission pipeline",
       role: "Web Engineering & Multilingual Experience",
       shortSubtitle: "Institutional web platform & professional training catalog with a multilingual journey.",
       category: "edtech",
@@ -1400,8 +1405,9 @@ export const portfolioDataEN: PortfolioDataset = {
       keyTech: "Institutional Web",
       screenshotUrl: "/projects/royal-high-school-nyom.png",
       screenshotAlt: "Royal High School Nyom official bilingual portal",
-      screenshotPlaceholder: "[TODO: provide desktop 16:9 screenshot for Royal High School Nyom]",
-      metricLine: "[TODO: missing numeric metric for this project]",
+      // [TODO: provide desktop 16:9 screenshot for Royal High School Nyom if updated]
+      // [TODO: missing numeric enrollment metric to be provided later]
+      metricLine: "Dual Curriculum FR/EN — Official bilingual admissions & parent portal",
       role: "Web Engineering & Institutional Design",
       shortSubtitle: "Institutional website for a private bilingual school in Yaoundé with parent and student resources.",
       category: "edtech",
@@ -1450,8 +1456,9 @@ export const portfolioDataEN: PortfolioDataset = {
       keyTech: "B2B Solutions",
       screenshotUrl: "/projects/gestplus-platform.png",
       screenshotAlt: "GestPlus corporate management & consulting platform",
-      screenshotPlaceholder: "[TODO: provide desktop 16:9 screenshot for GestPlus]",
-      metricLine: "[TODO: missing numeric metric for this project]",
+      // [TODO: provide desktop 16:9 screenshot for GestPlus if updated]
+      // [TODO: missing conversion metric to be provided later]
+      metricLine: "B2B Consulting — Business management solutions & quotation pipeline",
       role: "Full-Stack Web Development & Business Solutions",
       shortSubtitle: "Business & management web platform providing enterprise services and organizational solutions.",
       category: "business",
@@ -1495,7 +1502,7 @@ export const portfolioDataEN: PortfolioDataset = {
       isSignature: false,
       keyTech: "FastAPI + PostGIS",
       screenshotAlt: "PharmaProxi geospatial pharmacy lookup UI",
-      screenshotPlaceholder: "[TODO: provide desktop 16:9 screenshot for PharmaProxi]",
+      // [TODO: provide desktop 16:9 screenshot for PharmaProxi]
       metricLine: "< 80ms — Spatial index lookup latency for nearby dispensaries",
       role: "Full-Stack Engineer",
       shortSubtitle: "Healthcare digital network improving citizen access to medicine stocks and pharmacy services.",
@@ -1546,7 +1553,7 @@ export const portfolioDataEN: PortfolioDataset = {
       isSignature: false,
       keyTech: "Angular + FullCalendar",
       screenshotAlt: "Academic management operating system and schedule builder",
-      screenshotPlaceholder: "[TODO: provide desktop 16:9 screenshot for Education Management Platform]",
+      // [TODO: provide desktop 16:9 screenshot for Education Management Platform]
       metricLine: "0 scheduling collisions — Weighted grading engine and planner",
       role: "Full-Stack Software Engineer",
       shortSubtitle: "Academic operating system managing weighted grading, timetables, and student progress.",
@@ -1598,8 +1605,9 @@ export const portfolioDataEN: PortfolioDataset = {
       isSignature: false,
       keyTech: "Next.js + Media Pipeline",
       screenshotAlt: "Sports talent discovery and certified athletic portfolio portal",
-      screenshotPlaceholder: "[TODO: provide desktop 16:9 screenshot for Football & Talent Platform]",
-      metricLine: "[TODO: missing engagement or video volume metric for this project]",
+      // [TODO: provide desktop 16:9 screenshot for Football & Talent Platform]
+      // [TODO: missing engagement or video volume metric to be provided later]
+      metricLine: "Multi-criteria — Verified athletic scouting profiles and video feeds",
       role: "Full-Stack Engineer",
       shortSubtitle: "Digital recruitment and scouting ecosystem connecting athletes, recruiters, and clubs.",
       category: "sportstech",
