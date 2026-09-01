@@ -39,13 +39,20 @@ function ProjectsContent() {
     { id: 'tier-lab', label: '🧪 Domain & Lab (3)' },
   ];
 
-  const filteredProjects = featuredProjects.filter((project) => {
-    if (selectedCategory === 'all') return true;
-    if (selectedCategory === 'tier-flagship') return project.projectTier === 'flagship';
-    if (selectedCategory === 'tier-production') return project.projectTier === 'production';
-    if (selectedCategory === 'tier-lab') return project.projectTier === 'lab';
-    return true;
-  });
+  const filteredProjects = [...featuredProjects]
+    .filter((project) => {
+      if (selectedCategory === 'all') return true;
+      if (selectedCategory === 'tier-flagship') return project.projectTier === 'flagship';
+      if (selectedCategory === 'tier-production') return project.projectTier === 'production';
+      if (selectedCategory === 'tier-lab') return project.projectTier === 'lab';
+      return true;
+    })
+    .sort((a, b) => {
+      // Prioritize projects with real screenshots
+      if (a.screenshotUrl && !b.screenshotUrl) return -1;
+      if (!a.screenshotUrl && b.screenshotUrl) return 1;
+      return 0;
+    });
 
   return (
     <main className="relative bg-[#0A0A0A] min-h-screen text-[#F5F5F5]">

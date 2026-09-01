@@ -16,12 +16,12 @@ export const FeaturedProjects: React.FC = () => {
 
   const [activeProjectModal, setActiveProjectModal] = useState<Project | null>(null);
 
-  // 4 projets phares retenus pour la vitrine principale
+  // 4 projets phares retenus en priorisant ceux avec captures d'écran réelles
   const selectedProjectIds = [
-    'bacterial-resistance-ai',
-    'afos-sports-platform',
-    'mesdoh-fintech',
     'citis-formation',
+    'royal-high-school-nyom',
+    'gestplus-platform',
+    'bacterial-resistance-ai',
   ];
 
   const primaryProjects = selectedProjectIds
