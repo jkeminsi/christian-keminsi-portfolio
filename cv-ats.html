@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV ATS (1 Colonne) — Christian Jordan KEMINSI | Full-Stack Engineer & Systems Architect</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: #475569;
+      color: #0F172A;
+      line-height: 1.42;
+      font-size: 9.4pt;
+      -webkit-font-smoothing: antialiased;
+      padding: 20px 0;
+    }
+
+    .font-mono {
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .page-container {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 0 auto 20px auto;
+      background: #FFFFFF;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+      padding: 12mm 15mm;
+      position: relative;
+    }
+
+    /* ACTION BAR */
+    .action-bar {
+      width: 210mm;
+      margin: 0 auto 15px auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 12px 18px;
+      background: #1E293B;
+      border-radius: 10px;
+      color: #F8FAFC;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+    }
+
+    .action-bar-title {
+      font-weight: 600;
+      font-size: 13px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .action-buttons {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn-switch {
+      background: #334155;
+      color: #F8FAFC;
+      text-decoration: none;
+      padding: 7px 12px;
+      border-radius: 6px;
+      font-weight: 500;
+      font-size: 11.5px;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .btn-switch:hover {
+      background: #475569;
+    }
+
+    .btn-print {
+      background: #2563EB;
+      color: #FFFFFF;
+      border: none;
+      padding: 7px 16px;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 11.5px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .btn-print:hover {
+      background: #1D4ED8;
+    }
+
+    /* 1-COLUMN ATS STYLING */
+    header {
+      border-bottom: 2px solid #0F172A;
+      padding-bottom: 8px;
+      margin-bottom: 9px;
+    }
+
+    h1 {
+      font-size: 18pt;
+      font-weight: 800;
+      color: #0F172A;
+      text-transform: uppercase;
+      letter-spacing: -0.02em;
+    }
+
+    .subtitle {
+      font-size: 11pt;
+      font-weight: 700;
+      color: #2563EB;
+      margin-top: 2px;
+    }
+
+    .status-line {
+      font-size: 8.3pt;
+      font-weight: 600;
+      color: #334155;
+      margin-top: 3px;
+    }
+
+    .contacts {
+      font-size: 8pt;
+      font-family: 'JetBrains Mono', monospace;
+      color: #475569;
+      margin-top: 5px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px 12px;
+    }
+
+    .contacts a {
+      color: #0F172A;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    section {
+      margin-bottom: 9px;
+    }
+
+    h2 {
+      font-size: 10pt;
+      font-weight: 800;
+      color: #0F172A;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      border-bottom: 1.5px solid #E2E8F0;
+      padding-bottom: 2px;
+      margin-top: 9px;
+      margin-bottom: 6px;
+    }
+
+    .summary {
+      font-size: 8.6pt;
+      line-height: 1.38;
+      color: #1E293B;
+    }
+
+    .spotlight {
+      background: #F8FAFC;
+      border-left: 3px solid #2563EB;
+      padding: 6px 9px;
+      margin: 6px 0;
+      font-size: 8.3pt;
+    }
+
+    .spotlight-title {
+      font-weight: 800;
+      font-size: 9pt;
+      color: #0F172A;
+    }
+
+    .spotlight-metric {
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 700;
+      color: #059669;
+      font-size: 7.6pt;
+      margin: 1px 0;
+    }
+
+    .exp-item {
+      margin-bottom: 8px;
+    }
+
+    .exp-header {
+      display: flex;
+      justify-content: space-between;
+      font-weight: 700;
+      font-size: 9pt;
+      color: #0F172A;
+    }
+
+    .exp-sub {
+      font-size: 7.8pt;
+      color: #64748B;
+      font-style: italic;
+      margin-bottom: 2px;
+    }
+
+    ul {
+      padding-left: 14px;
+      font-size: 8.2pt;
+      color: #334155;
+    }
+
+    li {
+      margin-bottom: 2px;
+      line-height: 1.34;
+    }
+
+    .skills-block {
+      font-size: 8.2pt;
+      color: #334155;
+      line-height: 1.38;
+    }
+
+    .skills-block strong {
+      color: #0F172A;
+    }
+
+    .edu-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 8px;
+      font-size: 8pt;
+    }
+
+    .edu-item {
+      background: #F8FAFC;
+      border: 1px solid #E2E8F0;
+      padding: 5px 7px;
+      border-radius: 4px;
+    }
+
+    .page-footer {
+      position: absolute;
+      bottom: 5mm;
+      left: 15mm;
+      right: 15mm;
+      display: flex;
+      justify-content: space-between;
+      font-size: 7.2pt;
+      font-family: 'JetBrains Mono', monospace;
+      color: #64748B;
+      border-top: 1px solid #E2E8F0;
+      padding-top: 3px;
+    }
+
+    .page-break {
+      page-break-before: always;
+      break-before: page;
+    }
+
+    @media print {
+      body {
+        background: #FFFFFF;
+        padding: 0;
+        margin: 0;
+      }
+
+      .action-bar {
+        display: none !important;
+      }
+
+      .page-container {
+        box-shadow: none;
+        margin: 0;
+        width: 100%;
+        min-height: auto;
+        padding: 10mm 12mm 10mm 12mm;
+      }
+
+      @page {
+        size: A4 portrait;
+        margin: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Action Bar -->
+  <div class="action-bar">
+    <div class="action-bar-title">
+      <span>📋 CV Plateformes / ATS (Format 1 Colonne Strict) — Christian Jordan KEMINSI</span>
+    </div>
+    <div class="action-buttons">
+      <a href="cv.html" class="btn-switch">
+        📄 Voir Version Réseau (2 Colonnes)
+      </a>
+      <a href="https://jkeminsi.github.io/christian-keminsi-portfolio/" target="_blank" class="btn-switch">
+        🌐 Portfolio
+      </a>
+      <button class="btn-print" onclick="window.print()">
+        🖨️ Imprimer / PDF
+      </button>
+    </div>
+  </div>
+
+  <div class="page-container">
+
+    <!-- 1. EN-TÊTE LINÉAIRE STRICTEMENT EXTRACTIBLE -->
+    <header>
+      <h1>Christian Jordan KEMINSI T.</h1>
+      <div class="subtitle">Full-Stack Engineer & Systems Architect</div>
+      <div class="status-line">Statut : Consultant Indépendant · Missions parallèles pour clients internationaux (USA, Canada, Cameroun)</div>
+      <div class="contacts">
+        <span>Email : <a href="mailto:jkeminsi06@gmail.com">jkeminsi06@gmail.com</a></span>
+        <span>Téléphone : +237 672 309 295</span>
+        <span>Localisation : Yaoundé, Cameroun (Remote-friendly)</span>
+        <span>LinkedIn : <a href="https://linkedin.com/in/christian-keminsi-376479215" target="_blank">christian-keminsi</a></span>
+        <span>GitHub : <a href="https://github.com/jkeminsi" target="_blank">jkeminsi</a></span>
+        <span>Portfolio : <a href="https://christiankeminsi.dev" target="_blank">christiankeminsi.dev</a></span>
+      </div>
+    </header>
+
+    <!-- 2. RÉSUMÉ PROFESSIONNEL -->
+    <section>
+      <h2>Résumé Professionnel</h2>
+      <p class="summary">
+        Ingénieur Logiciel & Architecte Système spécialisé dans la conception d'API RESTful haute performance et d'architectures web scalables. Diplômé d'un Master en Génie Logiciel complété par une Licence en Microbiologie, je mobilise cette double compétence pour concevoir des systèmes métier critiques et des outils d'aide à la décision clinique (HealthTech, FinTech, EdTech) du design architectural au déploiement en production.
+      </p>
+    </section>
+
+    <!-- 3. PROJET PHARE ISOLÉ (PREUVE TECHNIQUE) -->
+    <section>
+      <h2>Projet Signature : IA Médicale & Bioinformatique</h2>
+      <div class="spotlight">
+        <div class="spotlight-title">AI Bacterial Resistance Prediction (RAM) — Intelligence Clinique</div>
+        <div class="spotlight-metric">Métrique clé : Inférence < 120ms · Validation Normes EUCAST (tests de charge locaux FastAPI)</div>
+        <p><strong>Synergie directe Microbiologie + Génie Logiciel :</strong> Système d'aide à la décision clinique prédisant l'antibiorésistance par modèles de Machine Learning (Random Forest, SVM, XGBoost) entraînés sur profils génomiques et données CMI, avec cartographie d'antibiogrammes et confrontation aux seuils officiels européens EUCAST.</p>
+        <p style="font-family: 'JetBrains Mono', monospace; font-size: 7.5pt; color: #475569; margin-top: 2px;">Stack technique : Python, FastAPI, Scikit-learn, XGBoost, Angular, Docker Compose · Code source vérifiable sur GitHub.</p>
+      </div>
+    </section>
+
+    <!-- 4. MISSIONS CLIENTS & EXPÉRIENCE PROFESSIONNELLE -->
+    <section>
+      <h2>Expérience Professionnelle & Missions Clients</h2>
+
+      <div class="exp-item">
+        <div class="exp-header">
+          <span>Client : Jetcamer — Full-Stack & API Engineer (Plateforme MesDoh)</span>
+          <span class="font-mono" style="font-size: 7.8pt;">03/2022 — Présent</span>
+        </div>
+        <div class="exp-sub">Mission continue à distance · Californie, USA</div>
+        <ul>
+          <li>Architecture et développement de la suite financière <strong>MesDoh</strong> (caisse POS tactile, facturation automatisée, intégrité transactionnelle ACID).</li>
+          <li><strong>Optimisation de la latence d'API :</strong> Réduction de <strong>-35% du temps de réponse</strong> (sourcé : benchmarking k6/Postman, profilage d'endpoints et indexation PostgreSQL).</li>
+          <li>Conception des modules d'inventaire multi-magasins et moteur serveur de génération dynamique de factures PDF certifiées.</li>
+          <li>Collaboration avec les équipes DevOps pour l'automatisation CI/CD et la haute disponibilité.</li>
+        </ul>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-header">
+          <span>Client : Groupe LEGRANDSOFT — Backend & Systems Developer</span>
+          <span class="font-mono" style="font-size: 7.8pt;">06/2019 — Présent</span>
+        </div>
+        <div class="exp-sub">Mission freelance / Temps partagé · Québec, Canada</div>
+        <ul>
+          <li>Conception et maintenance d'architectures d'API RESTful robustes pour des services distribués et partenaires tiers.</li>
+          <li>Sécurisation, modélisation et optimisation de bases de données relationnelles (MySQL/PostgreSQL) et NoSQL.</li>
+          <li>Intégration de bus de messaging asynchrones pour le découplage des services backend à fort volume.</li>
+          <li>Mise en place de suites de tests automatisés (unitaires et intégration) renforçant la fiabilité en production.</li>
+        </ul>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-header">
+          <span>Client : CITIS POWERBACHE — Lead Web Architect & Formateur</span>
+          <span class="font-mono" style="font-size: 7.8pt;">05/2023 — Présent</span>
+        </div>
+        <div class="exp-sub">Mission d'architecture & conseil · Yaoundé</div>
+        <ul>
+          <li>Direction technique de la refonte du portail académique <strong>CitisFormation</strong> (catalogue dynamique bilingue & flux d'admissions).</li>
+          <li>Génération d'un gain de <strong>+35% de visibilité organique SEO</strong> (sourcé : Google Search Console, optimisation Core Web Vitals).</li>
+          <li>Supervision technique du portail bilingue de la <strong>Royal High School Nyom</strong>.</li>
+          <li>Animation de modules de formation avancés en génie logiciel, architecture d'applications et bases de données.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 5. STACK TECHNIQUE STRUCTURÉE -->
+    <section>
+      <h2>Compétences Techniques & Écosystème</h2>
+      <div class="skills-block">
+        <p><strong>Stack Principale (Maîtrise Quotidienne) :</strong> Python (FastAPI), Node.js, TypeScript, Angular (Framework principal en production), PostgreSQL (Transactions ACID), MySQL, Microservices, RESTful APIs asynchrones, HTML5 / CSS3 moderne.</p>
+        <p style="margin-top: 2px;"><strong>Intelligence Artificielle & Data Science :</strong> Scikit-learn, XGBoost, Random Forest, SVM, Pipelines d'inférence en temps réel (FastAPI), Bioinformatique & conformité aux normes cliniques EUCAST.</p>
+        <p style="margin-top: 2px;"><strong>DevOps, Sécurité & Outils Complémentaires :</strong> Docker, Nginx, CI/CD GitHub Actions, Linux, Sécurité OWASP, RBAC, Next.js, React, Tailwind CSS, PHP (Symfony), SQLite (Offline-First), MongoDB, Redis.</p>
+      </div>
+    </section>
+
+    <!-- 6. AUTRES RÉALISATIONS DÉPLOYÉES -->
+    <section>
+      <h2>Autres Réalisations Majeures Déployées</h2>
+      <ul>
+        <li><strong>AFOS Sports Ecosystem :</strong> Architecture distribuée offline-first capturant la télémétrie sportive sans réseau via SQLite local, avec réconciliation automatique cloud (0% perte de données). Stack : Angular, Ionic, SQLite, Node.js.</li>
+        <li><strong>Refonte ONG FACHAWO (fachawo.com) :</strong> Modernisation UI/UX, temps de chargement réduit de 4,2s à 1,6s et hausse de +40% de trafic organique mesuré via Google Search Console en 4 mois. Stack : HTML5, Tailwind CSS.</li>
+        <li><strong>BioClin & GestPlus (gestplus-sn.com) :</strong> Plateforme de gestion de stocks de réactifs de laboratoire et services B2B, réduisant de 60% les erreurs manuelles de saisie grâce à l'automatisation des bilans PDF. Stack : Angular, Node.js, MySQL.</li>
+        <li><strong>Plateforme Académique SIGEPO :</strong> Système de gestion des examens et délibérations avec génération en masse de relevés de notes et traçabilité RBAC. Stack : Symfony, MySQL, PDFMake.</li>
+      </ul>
+    </section>
+
+    <!-- 7. FORMATION -->
+    <section>
+      <h2>Formation Académique</h2>
+      <div class="edu-grid">
+        <div class="edu-item">
+          <strong>Master en Génie Logiciel</strong><br>
+          <span style="color: #2563EB;">IUSTY, Yaoundé</span><br>
+          <span class="font-mono" style="font-size: 7.2pt; color: #64748B;">10/2023 — 07/2025 (Cours du soir)</span>
+        </div>
+        <div class="edu-item">
+          <strong>Formation Dév. Web & Mobile</strong><br>
+          <span style="color: #2563EB;">CITIS PowerBache</span><br>
+          <span class="font-mono" style="font-size: 7.2pt; color: #64748B;">2018 — 2019</span>
+        </div>
+        <div class="edu-item">
+          <strong>Licence en Microbiologie</strong><br>
+          <span style="color: #2563EB;">Université de Yaoundé 1</span><br>
+          <span class="font-mono" style="font-size: 7.2pt; color: #64748B;">2014 — 2018</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. LANGUES & RÉFÉRENCES -->
+    <section>
+      <h2>Langues & Références Professionnelles</h2>
+      <p style="font-size: 8.2pt;">
+        <strong>Langues :</strong> Français (Langue maternelle / C2), Anglais (Professionnel technique / B2).<br>
+        <strong>Références vérifiables :</strong> M. Narcisse NOUMEGNI (Lead Tech, Jetcamer Californie), M. Legrand NITCHEU (Lead Tech, Legrandsoft Québec), Mme Margret TCHIENGA (Directrice, CITIS Yaoundé). <em>Coordonnées complètes et lettres de recommandation disponibles sur demande.</em>
+      </p>
+    </section>
+
+    <!-- Footer -->
+    <div class="page-footer">
+      <span>Christian Jordan KEMINSI — Full-Stack Engineer & Systems Architect</span>
+      <span>CV Plateformes / ATS (1 Colonne) · Portfolio en ligne : christiankeminsi.dev</span>
+    </div>
+
+  </div>
+
+</body>
+</html>
