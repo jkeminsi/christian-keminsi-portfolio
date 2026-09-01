@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CV — Christian Jordan KEMINSI | Full-Stack Engineer & Systems Architect</title>
+  <title>CV Réseau — Christian Jordan KEMINSI | Full-Stack Engineer & Systems Architect</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -376,6 +376,16 @@
       font-style: italic;
     }
 
+    .link-tag {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .link-tag:hover {
+      text-decoration: underline;
+    }
+
     .projects-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -394,6 +404,9 @@
       font-weight: 700;
       color: var(--primary);
       font-size: 7.9pt;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
 
     .project-card-desc {
@@ -462,7 +475,7 @@
         Voir Version ATS (1 Colonne)
       </a>
       <a href="https://jkeminsi.github.io/christian-keminsi-portfolio/" target="_blank" class="btn-switch">
-        Portfolio
+        Portfolio en Ligne
       </a>
       <button class="btn-print" onclick="window.print()">
         Imprimer / PDF
@@ -483,11 +496,11 @@
         <div class="sidebar-title">Contact & Liens</div>
         <div class="sidebar-contact">
           <div>Email : <a href="mailto:jkeminsi06@gmail.com">jkeminsi06@gmail.com</a></div>
-          <div>Tél : <strong>+237 672 309 295</strong></div>
+          <div>Tél : <a href="tel:+237672309295">+237 672 309 295</a></div>
           <div>Lieu : Yaoundé (Remote-ready)</div>
-          <div>LinkedIn : <a href="https://linkedin.com/in/christian-keminsi-376479215" target="_blank">christian-keminsi</a></div>
-          <div>GitHub : <a href="https://github.com/jkeminsi" target="_blank">jkeminsi</a></div>
-          <div>Web : <a href="https://christiankeminsi.dev" target="_blank">christiankeminsi.dev</a></div>
+          <div>LinkedIn : <a href="https://www.linkedin.com/in/christian-keminsi-376479215/" target="_blank">christian-keminsi</a></div>
+          <div>GitHub : <a href="https://github.com/jkeminsi" target="_blank">github.com/jkeminsi</a></div>
+          <div>Portfolio : <a href="https://jkeminsi.github.io/christian-keminsi-portfolio/" target="_blank">christiankeminsi.dev</a></div>
         </div>
       </div>
 
@@ -596,7 +609,7 @@
           Conçu à la croisée de ma formation en microbiologie et en génie logiciel : système d'aide à la décision clinique prédisant l'antibiorésistance à partir de profils génomiques et données CMI via des modèles supervisés (Random Forest, SVM, XGBoost), avec visualisation d'antibiogrammes et confrontation instantanée aux seuils officiels européens EUCAST.
         </div>
         <div style="font-family: 'JetBrains Mono', monospace; font-size: 7pt; color: var(--text-light); margin-top: 2px;">
-          Stack : Python, FastAPI, Scikit-learn, XGBoost, Angular, Docker · <a href="https://github.com/jkeminsi/bacterial-resistance-ai" target="_blank" style="color: var(--accent); font-weight: 600;">Code source GitHub ↗</a>
+          Stack : Python, FastAPI, Scikit-learn, XGBoost, Angular, Docker · <a href="https://github.com/jkeminsi/bacterial-resistance-ai" target="_blank" class="link-tag">Code source GitHub ↗</a>
         </div>
       </div>
 
@@ -615,7 +628,7 @@
         <div class="exp-meta">Mission continue à distance · Californie, USA</div>
         <ul class="exp-bullets">
           <li>Face aux ralentissements du terminal de caisse en heure de pointe, j'ai profilé les requêtes lentes et ré-indexé PostgreSQL, réduisant le temps de réponse API de <strong>35%</strong> <span class="source-tag">(benchmarks k6 / Postman)</span>.</li>
-          <li>Conception de l'architecture transactionnelle de la suite <strong>MesDoh</strong> : intégrité ACID, déduction de stock multi-magasins en temps réel et moteur serveur d'édition PDF certifiés.</li>
+          <li>Conception de l'architecture transactionnelle de la suite <a href="https://github.com/jkeminsi/mesdoh" target="_blank" class="link-tag">MesDoh ↗</a> : intégrité ACID, déduction de stock multi-magasins en temps réel et moteur serveur d'édition PDF certifiés.</li>
           <li>Automatisation des pipelines de build et de déploiement continu en étroite collaboration avec l'équipe DevOps.</li>
         </ul>
       </div>
@@ -647,8 +660,8 @@
         </div>
         <div class="exp-meta">Mission d'architecture & conseil · Yaoundé</div>
         <ul class="exp-bullets">
-          <li>Refonte architecturale complète du portail académique <strong>CitisFormation</strong> pour fluidifier le parcours d'admission et diviser les temps de chargement, entraînant un gain de <strong>+35% de visibilité organique</strong> <span class="source-tag">(Google Search Console)</span>.</li>
-          <li>Supervision technique du portail bilingue officiel de la <strong>Royal High School Nyom</strong>.</li>
+          <li>Refonte architecturale complète du portail académique <a href="https://citisformation.com/fr" target="_blank" class="link-tag">CitisFormation ↗</a> pour fluidifier le parcours d'admission et diviser les temps de chargement, entraînant un gain de <strong>+35% de visibilité organique</strong> <span class="source-tag">(Google Search Console)</span>.</li>
+          <li>Supervision technique du site bilingue officiel de la <a href="https://royalschoolnyom.com/" target="_blank" class="link-tag">Royal High School Nyom ↗</a>.</li>
           <li>Conception et animation de modules pratiques en architecture logicielle et programmation, axés sur les bonnes pratiques de production.</li>
         </ul>
       </div>
@@ -657,23 +670,35 @@
       <h2 class="main-section-title">Autres Systèmes Déployés en Production</h2>
       <div class="projects-grid">
         <div class="project-card">
-          <div class="project-card-title">AFOS Sports Ecosystem</div>
-          <div class="project-card-desc">Système télémétrique capturant les données GPS sur le terrain sans réseau via SQLite local, avec réconciliation automatique cloud (<strong>0% perte de données</strong> — <span class="source-tag">tests résilience réseau</span>).<br><strong>Stack :</strong> Angular, Ionic, SQLite, Node.js</div>
+          <div class="project-card-title">
+            <span>AFOS Sports Ecosystem</span>
+            <a href="https://github.com/jkeminsi/afos-platform" target="_blank" class="link-tag">GitHub ↗</a>
+          </div>
+          <div class="project-card-desc">Système télémétrique capturant les données GPS sur le terrain sans réseau via SQLite local, avec réconciliation cloud (<strong>0% perte de données</strong> — <span class="source-tag">tests résilience</span>).<br><strong>Stack :</strong> Angular, Ionic, SQLite, Node.js</div>
         </div>
 
         <div class="project-card">
-          <div class="project-card-title">Refonte ONG FACHAWO (fachawo.com)</div>
-          <div class="project-card-desc">Refonte intégrale UI/UX et optimisation technique : temps de chargement réduit de 4,2s à 1,6s et <strong>+40% de trafic organique</strong> mesuré en 4 mois <span class="source-tag">(Search Console / Lighthouse)</span>.<br><strong>Stack :</strong> HTML5, Tailwind CSS</div>
+          <div class="project-card-title">
+            <span>ONG FACHAWO</span>
+            <a href="https://fachawo.com/" target="_blank" class="link-tag">fachawo.com ↗</a>
+          </div>
+          <div class="project-card-desc">Refonte intégrale UI/UX et optimisation technique : chargement réduit de 4,2s à 1,6s et <strong>+40% de trafic organique</strong> en 4 mois <span class="source-tag">(Search Console / Lighthouse)</span>.<br><strong>Stack :</strong> HTML5, Tailwind CSS</div>
         </div>
 
         <div class="project-card">
-          <div class="project-card-title">BioClin & GestPlus (gestplus-sn.com)</div>
-          <div class="project-card-desc">Plateforme de gestion de stocks de réactifs de laboratoire et services B2B, réduisant de <strong>-60% les erreurs manuelles</strong> grâce à l'automatisation des flux PDF <span class="source-tag">(audit interne)</span>.<br><strong>Stack :</strong> Angular, Node.js, MySQL</div>
+          <div class="project-card-title">
+            <span>BioClin & GestPlus</span>
+            <a href="https://gestplus-sn.com/" target="_blank" class="link-tag">gestplus-sn.com ↗</a>
+          </div>
+          <div class="project-card-desc">Gestion de stock de réactifs de laboratoire et services B2B, réduisant de <strong>-60% les erreurs manuelles</strong> grâce à l'automatisation PDF <span class="source-tag">(audit interne)</span>.<br><strong>Stack :</strong> Angular, Node.js, MySQL</div>
         </div>
 
         <div class="project-card">
-          <div class="project-card-title">Plateforme Académique SIGEPO</div>
-          <div class="project-card-desc">Système de gestion des examens et délibérations avec génération en masse de relevés certifiés et traçabilité granulaire RBAC <span class="source-tag">(contrôle semestriel)</span>.<br><strong>Stack :</strong> Symfony, MySQL, PDFMake</div>
+          <div class="project-card-title">
+            <span>Plateforme SIGEPO</span>
+            <a href="https://jkeminsi.github.io/christian-keminsi-portfolio/#projects" target="_blank" class="link-tag">Détails ↗</a>
+          </div>
+          <div class="project-card-desc">Système de gestion des examens et délibérations avec génération en masse de relevés certifiés et traçabilité RBAC <span class="source-tag">(contrôle semestriel)</span>.<br><strong>Stack :</strong> Symfony, MySQL, PDFMake</div>
         </div>
       </div>
 
@@ -682,7 +707,7 @@
     <!-- Footer -->
     <div class="page-footer">
       <span>Christian Jordan KEMINSI — Full-Stack Engineer & Systems Architect</span>
-      <span>CV Réseau · Code source & projets vérifiables sur christiankeminsi.dev</span>
+      <span>CV Réseau · Projets & Code source vérifiables sur <a href="https://jkeminsi.github.io/christian-keminsi-portfolio/" target="_blank" style="color: inherit; text-decoration: underline;">christiankeminsi.dev</a></span>
     </div>
 
   </div>
