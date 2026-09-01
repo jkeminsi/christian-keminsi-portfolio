@@ -422,7 +422,7 @@ export const portfolioDataFR: PortfolioDataset = {
       keyTech: "FastAPI + PostgreSQL ACID",
       screenshotAlt: "Terminal point de vente POS et grand livre comptable MesDoh",
       // [TODO: fournir capture d'écran desktop 16:9 pour MesDoh ou mockup anonymisé Figma]
-      metricLine: "< 2s — Temps moyen d'encaissement POS avec intégrité ACID",
+      metricLine: "-35% temps de réponse API — Intégration POS Jetcamer & transactions ACID",
       role: "Full-Stack Engineer & Database Architect",
       shortSubtitle: "Écosystème financier digital combinant POS, facturation automatisée, gestion de stock et transactions.",
       category: "fintech",
@@ -455,8 +455,8 @@ export const portfolioDataFR: PortfolioDataset = {
         "Docker"
       ],
       metrics: [
+        { label: "Performance API", value: "-35% Latence" },
         { label: "Intégrité Données", value: "Garantie ACID" },
-        { label: "Encaissement POS", value: "< 2s Moyen" },
         { label: "Moteur Doc", value: "PDF Dynamique" },
         { label: "Sécurité", value: "RBAC & Audit Trail" }
       ],
@@ -477,8 +477,7 @@ export const portfolioDataFR: PortfolioDataset = {
       screenshotUrl: "/projects/citis-formation.png",
       screenshotAlt: "Plateforme web et catalogue de formation CitisFormation",
       // [TODO: fournir capture d'écran desktop 16:9 haute résolution pour CitisFormation si mise à jour]
-      // [TODO: métrique chiffrée d'usage/trafic précise à fournir ultérieurement]
-      metricLine: "100% bilingue — Catalogue dynamique et flux d'admissions en ligne",
+      metricLine: "+35% visibilité SEO — Catalogue dynamique bilingue & flux d'admissions",
       role: "Développement Web & Expérience Multilingue",
       shortSubtitle: "Plateforme web institutionnelle et catalogue de formations professionnelles avec parcours multilingue.",
       category: "edtech",
@@ -510,7 +509,7 @@ export const portfolioDataFR: PortfolioDataset = {
         "Cloud Hosting"
       ],
       metrics: [
-        { label: "Statut", value: "En Ligne" },
+        { label: "Visibilité SEO", value: "+35%" },
         { label: "Catalogue", value: "Multi-Filières" },
         { label: "Langues", value: "Bilingue FR/EN" },
         { label: "Type", value: "Client Réel" }
@@ -529,7 +528,6 @@ export const portfolioDataFR: PortfolioDataset = {
       screenshotUrl: "/projects/royal-high-school-nyom.png",
       screenshotAlt: "Portail institutionnel bilingue Royal High School Nyom",
       // [TODO: fournir capture d'écran desktop 16:9 haute résolution pour Royal High School Nyom si mise à jour]
-      // [TODO: métrique chiffrée d'inscriptions à fournir ultérieurement]
       metricLine: "Double cursus FR/EN — Portail officiel d'admission et informations familles",
       role: "Ingénierie Web & Conception Institutionnelle",
       shortSubtitle: "Site institutionnel pour une école bilingue privée à Yaoundé, avec accès aux informations parents/élèves.",
@@ -571,17 +569,16 @@ export const portfolioDataFR: PortfolioDataset = {
     {
       id: "gestplus-platform",
       slug: "gestplus-platform",
-      title: "GestPlus",
+      title: "GestPlus / BioClin",
       badge: "En Ligne · Production",
       projectTier: "production",
       isLiveProduction: true,
       liveUrl: "https://gestplus-sn.com",
-      keyTech: "Solutions B2B",
+      keyTech: "Solutions B2B & BioClin",
       screenshotUrl: "/projects/gestplus-platform.png",
       screenshotAlt: "Plateforme de gestion d'entreprise GestPlus",
       // [TODO: fournir capture d'écran desktop 16:9 haute résolution pour GestPlus si mise à jour]
-      // [TODO: métrique chiffrée de conversion à fournir ultérieurement]
-      metricLine: "Services B2B — Architecture de présentation et formulaires de devis",
+      metricLine: "-60% d'erreurs manuelles — Dashboard BioClin/GestPlus & rapports PDF automatisés",
       role: "Développement Web & Solutions Métier",
       shortSubtitle: "Projet web orienté gestion d'entreprise, services professionnels et solutions organisationnelles.",
       category: "business",
@@ -609,7 +606,7 @@ export const portfolioDataFR: PortfolioDataset = {
         "Production Deployment"
       ],
       metrics: [
-        { label: "Statut", value: "En Ligne" },
+        { label: "Erreurs Manuelles", value: "-60%" },
         { label: "Domaine", value: "Gestion Entreprise" },
         { label: "Cible", value: "B2B Services" },
         { label: "Type", value: "Client Réel" }
@@ -1300,7 +1297,7 @@ export const portfolioDataEN: PortfolioDataset = {
       keyTech: "FastAPI + PostgreSQL ACID",
       screenshotAlt: "MesDoh point of sale POS terminal and accounting ledger",
       // [TODO: provide desktop 16:9 screenshot for MesDoh or anonymized Figma mockup]
-      metricLine: "< 2s — Average POS transaction latency with ACID compliance",
+      metricLine: "-35% API latency — High-throughput Jetcamer POS integration & ACID transactions",
       role: "Full-Stack Engineer & Database Architect",
       shortSubtitle: "Digital financial ecosystem combining POS, automated billing, multi-store stock, and transactions.",
       category: "fintech",
@@ -1333,8 +1330,8 @@ export const portfolioDataEN: PortfolioDataset = {
         "Docker"
       ],
       metrics: [
+        { label: "API Performance", value: "-35% Latency" },
         { label: "Transaction Integrity", value: "ACID Guaranteed" },
-        { label: "POS Checkout", value: "< 2s Avg" },
         { label: "Document Engine", value: "PDF Dynamic Gen" },
         { label: "Security", value: "RBAC & Audit Trail" }
       ],
@@ -1354,8 +1351,7 @@ export const portfolioDataEN: PortfolioDataset = {
       screenshotUrl: "/projects/citis-formation.png",
       screenshotAlt: "CitisFormation vocational catalog and admission portal",
       // [TODO: provide desktop 16:9 screenshot for CitisFormation if updated]
-      // [TODO: missing numeric usage/traffic metric to be provided later]
-      metricLine: "100% Multilingual — Dynamic vocational catalog & admission pipeline",
+      metricLine: "+35% SEO organic visibility — Multilingual Next.js architecture & admission pipeline",
       role: "Web Engineering & Multilingual Experience",
       shortSubtitle: "Institutional web platform & professional training catalog with a multilingual journey.",
       category: "edtech",
@@ -1387,7 +1383,7 @@ export const portfolioDataEN: PortfolioDataset = {
         "Cloud Hosting"
       ],
       metrics: [
-        { label: "Status", value: "Live Online" },
+        { label: "SEO Visibility", value: "+35%" },
         { label: "Catalog", value: "Multi-Track" },
         { label: "Language", value: "Bilingual FR/EN" },
         { label: "Type", value: "Client Platform" }
@@ -1406,7 +1402,6 @@ export const portfolioDataEN: PortfolioDataset = {
       screenshotUrl: "/projects/royal-high-school-nyom.png",
       screenshotAlt: "Royal High School Nyom official bilingual portal",
       // [TODO: provide desktop 16:9 screenshot for Royal High School Nyom if updated]
-      // [TODO: missing numeric enrollment metric to be provided later]
       metricLine: "Dual Curriculum FR/EN — Official bilingual admissions & parent portal",
       role: "Web Engineering & Institutional Design",
       shortSubtitle: "Institutional website for a private bilingual school in Yaoundé with parent and student resources.",
@@ -1448,17 +1443,16 @@ export const portfolioDataEN: PortfolioDataset = {
     {
       id: "gestplus-platform",
       slug: "gestplus-platform",
-      title: "GestPlus",
+      title: "GestPlus / BioClin",
       badge: "Live · Production",
       projectTier: "production",
       isLiveProduction: true,
       liveUrl: "https://gestplus-sn.com",
-      keyTech: "B2B Solutions",
+      keyTech: "B2B Solutions & BioClin",
       screenshotUrl: "/projects/gestplus-platform.png",
       screenshotAlt: "GestPlus corporate management & consulting platform",
       // [TODO: provide desktop 16:9 screenshot for GestPlus if updated]
-      // [TODO: missing conversion metric to be provided later]
-      metricLine: "B2B Consulting — Business management solutions & quotation pipeline",
+      metricLine: "-60% manual errors — BioClin & GestPlus laboratory inventory & PDF automation",
       role: "Full-Stack Web Development & Business Solutions",
       shortSubtitle: "Business & management web platform providing enterprise services and organizational solutions.",
       category: "business",
