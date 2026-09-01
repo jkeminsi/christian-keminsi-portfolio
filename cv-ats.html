@@ -35,6 +35,8 @@
       background: #FFFFFF;
       box-shadow: 0 10px 25px rgba(0,0,0,0.3);
       padding: 12mm 15mm;
+      display: flex;
+      flex-direction: column;
       position: relative;
     }
 
@@ -253,17 +255,14 @@
     }
 
     .page-footer {
-      position: absolute;
-      bottom: 5mm;
-      left: 15mm;
-      right: 15mm;
+      margin-top: auto;
+      padding-top: 4px;
       display: flex;
       justify-content: space-between;
       font-size: 7pt;
       font-family: 'JetBrains Mono', monospace;
       color: #64748B;
       border-top: 1px solid #E2E8F0;
-      padding-top: 3px;
     }
 
     @media print {
@@ -360,8 +359,8 @@
         <div class="exp-sub">Mission continue à distance · Californie, USA</div>
         <ul>
           <li>Face aux ralentissements du terminal de caisse en heure de pointe, j'ai profilé les requêtes lentes et ré-indexé PostgreSQL, réduisant le temps de réponse API de <strong>35%</strong> (sourcé : benchmarking k6 / Postman).</li>
-          <li>Conception de l'architecture transactionnelle de la suite <a href="https://github.com/jkeminsi/mesdoh" target="_blank" class="link-tag">MesDoh (https://github.com/jkeminsi/mesdoh) ↗</a> : intégrité ACID, déduction de stock multi-magasins en temps réel et moteur serveur d'édition PDF certifiés.</li>
-          <li>Automatisation des pipelines de build et de déploiement continu en étroite collaboration avec l'équipe DevOps.</li>
+          <li>Pour sécuriser les flux de vente multi-magasins, j'ai conçu un moteur transactionnel garantissant l'intégrité ACID des stocks et l'édition asynchrone des factures PDF certifiées pour la suite <a href="https://github.com/jkeminsi/mesdoh" target="_blank" class="link-tag">MesDoh ↗</a>.</li>
+          <li>J'ai automatisé les pipelines CI/CD sous GitHub Actions et conteneurisé les services sous Docker pour fiabiliser les déploiements continus en production.</li>
         </ul>
       </div>
 
@@ -372,8 +371,8 @@
         </div>
         <div class="exp-sub">Mission freelance / Temps partagé · Québec, Canada</div>
         <ul>
-          <li>Conception d'architectures d'API RESTful pour des services distribués, avec découplage asynchrone par files de messages pour absorber les pics de charge.</li>
-          <li>Modélisation et sécurisation des bases relationnelles (MySQL/PostgreSQL) et NoSQL, complétées par des suites de tests automatisés pour fiabiliser les mises en production.</li>
+          <li>Pour absorber les pics de charge des API partenaires, j'ai découplé les traitements lourds via des architectures RESTful modulaires et des files de messages asynchrones.</li>
+          <li>Face à des volumes croissants de transactions, j'ai restructuré et sécurisé les bases PostgreSQL/MySQL, en y adjoignant des suites de tests automatisés pour éliminer les régressions de production.</li>
         </ul>
       </div>
 
@@ -384,9 +383,8 @@
         </div>
         <div class="exp-sub">Mission d'architecture & conseil · Yaoundé</div>
         <ul>
-          <li>Refonte architecturale complète du portail académique <a href="https://citisformation.com/fr" target="_blank" class="link-tag">https://citisformation.com/fr ↗</a> pour fluidifier le parcours d'admission et diviser les temps de chargement, entraînant un gain de <strong>+35% de visibilité organique</strong> (sourcé : Google Search Console).</li>
-          <li>Supervision technique du portail bilingue officiel de la <a href="https://royalschoolnyom.com/" target="_blank" class="link-tag">https://royalschoolnyom.com/ ↗</a>.</li>
-          <li>Conception et animation de modules pratiques en architecture logicielle et programmation, axés sur les bonnes pratiques de production.</li>
+          <li>Pour fluidifier les admissions sur <a href="https://citisformation.com/fr" target="_blank" class="link-tag">CitisFormation ↗</a>, j'ai refondu l'architecture web et optimisé les Core Web Vitals, générant <strong>+35% de visibilité organique</strong> (sourcé : Google Search Console sur 6 mois).</li>
+          <li>J'ai dirigé la conception technique du portail bilingue de la <a href="https://royalschoolnyom.com/" target="_blank" class="link-tag">Royal High School Nyom ↗</a> et animé des ateliers pratiques en génie logiciel axés sur la Clean Architecture.</li>
         </ul>
       </div>
     </section>
@@ -404,12 +402,12 @@
 
     <!-- 6. AUTRES RÉALISATIONS DÉPLOYÉES (TOUTES SOURCÉES AVEC LIENS) -->
     <section>
-      <h2>Autres Réalisations Majeures Déployées</h2>
+      <h2>Autres Réalisations Majeures DéPLOYÉES</h2>
       <ul>
-        <li><strong>AFOS Sports Ecosystem :</strong> Architecture distribuée offline-first capturant la télémétrie sportive sans réseau via SQLite local, avec réconciliation cloud (<strong>0% perte de données</strong> — sourcé : tests de résilience réseau). Stack : Angular, Ionic, SQLite, Node.js · <a href="https://github.com/jkeminsi/afos-platform" target="_blank" class="link-tag">https://github.com/jkeminsi/afos-platform ↗</a></li>
-        <li><strong>Refonte ONG FACHAWO (<a href="https://fachawo.com/" target="_blank" class="link-tag">https://fachawo.com/ ↗</a>) :</strong> Modernisation UI/UX, temps de chargement réduit de 4,2s à 1,6s et <strong>+40% de trafic organique</strong> (sourcé : Google Search Console / Lighthouse en 4 mois). Stack : HTML5, Tailwind CSS.</li>
-        <li><strong>BioClin & GestPlus (<a href="https://gestplus-sn.com/" target="_blank" class="link-tag">https://gestplus-sn.com/ ↗</a>) :</strong> Plateforme de gestion de stocks de réactifs de laboratoire et services B2B, réduisant de <strong>-60% les erreurs manuelles</strong> grâce à l'automatisation des flux PDF (sourcé : audit opérationnel interne). Stack : Angular, Node.js, MySQL.</li>
-        <li><strong>Plateforme Académique SIGEPO :</strong> Gestion des examens et délibérations avec génération en masse de relevés certifiés et traçabilité RBAC (sourcé : contrôle académique semestriel). Stack : Symfony, MySQL, PDFMake.</li>
+        <li><strong>AFOS Sports Ecosystem :</strong> Architecture distribuée garantissant <strong>0% de perte de données</strong> : télémétrie et évaluations capturées sous SQLite local hors-ligne, puis réconciliées automatiquement avec le cloud dès la reconnexion. Stack : Angular, Ionic, SQLite, Node.js · <a href="https://github.com/jkeminsi/afos-platform" target="_blank" class="link-tag">https://github.com/jkeminsi/afos-platform ↗</a></li>
+        <li><strong>Refonte ONG FACHAWO (<a href="https://fachawo.com/" target="_blank" class="link-tag">https://fachawo.com/ ↗</a>) :</strong> Modernisation UI/UX et optimisation technique : temps de chargement divisé de 4,2s à 1,6s et <strong>+40% de trafic organique</strong> (sourcé : Google Search Console en 4 mois). Stack : HTML5, Tailwind CSS.</li>
+        <li><strong>BioClin & GestPlus (<a href="https://gestplus-sn.com/" target="_blank" class="link-tag">https://gestplus-sn.com/ ↗</a>) :</strong> Plateforme de gestion de stocks de réactifs et bilans de laboratoire : remplacement des registres papier par des formulaires contrôlés et bilans PDF automatiques. Stack : Angular, Node.js, MySQL.</li>
+        <li><strong>Plateforme Académique SIGEPO :</strong> Système de gestion des examens et délibérations avec calcul des moyennes pondérées, génération en masse de relevés certifiés et contrôle d'accès RBAC. Stack : Symfony, MySQL, PDFMake.</li>
       </ul>
     </section>
 
@@ -440,16 +438,15 @@
       <h2>Langues & Références Professionnelles</h2>
       <p style="font-size: 8pt;">
         <strong>Langues :</strong> Français (Langue maternelle / C2), Anglais (Professionnel technique / B2).<br>
-        <strong>Centres d'intérêt :</strong> Bioinformatique & vulgarisation, mentorat de développeurs, Clean Architecture.<br>
         <strong>Références vérifiables :</strong> M. Narcisse NOUMEGNI (Lead Tech, Jetcamer Californie), M. Legrand NITCHEU (Lead Tech, Legrandsoft Québec), Mme Margret TCHIENGA (Directrice, CITIS Yaoundé). <em>Coordonnées complètes et lettres de recommandation disponibles sur demande.</em>
       </p>
     </section>
 
     <!-- Footer -->
-    <div class="page-footer">
+    <footer class="page-footer">
       <span>Christian Jordan KEMINSI — Full-Stack Engineer & Systems Architect</span>
-      <span>CV Plateformes / ATS (1 Colonne) · Portfolio en ligne : <a href="https://jkeminsi.github.io/christian-keminsi-portfolio/" target="_blank" style="color: inherit; text-decoration: underline;">https://jkeminsi.github.io/christian-keminsi-portfolio/</a></span>
-    </div>
+      <span>Portfolio & Code : <a href="https://jkeminsi.github.io/christian-keminsi-portfolio/" target="_blank" style="color: inherit; text-decoration: underline;">https://jkeminsi.github.io/christian-keminsi-portfolio/</a></span>
+    </footer>
 
   </div>
 
